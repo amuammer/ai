@@ -1,492 +1,639 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Interactive Puter AI Chat</title>
-<script src="https://js.puter.com/v2/"></script>
-<style>
-/* Essential for full screen - No margins or padding */
-html, body {
-height: 100%; /* Make html and body fill the viewport height */
-width: 100%; /* Make html and body fill the viewport width */
-margin: 0;
-padding: 0;
-overflow: hidden; /* Prevent unwanted scrollbars */
-font-family: sans-serif;
-background-color: #f0f2f5;
-display: flex; /* Use flexbox for body to ensure container fills it */
-flex-direction: column;
-justify-content: center; /* Center the container vertically (if it doesn't take 100%) */
-align-items: center; /* Center the container horizontally (if it doesn't takes 100%) */
-}
+    <title>Interactive Puter AI Chat</title>
+    <script src="https://js.puter.com/v2/"></script>
+    <style>
+        /* Essential for full screen - No margins or padding */
+        html,
+        body {
+            height: 100%;
+            /* Make html and body fill the viewport height */
+            width: 100%;
+            /* Make html and body fill the viewport width */
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            /* Prevent unwanted scrollbars */
+            font-family: sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            /* Use flexbox for body to ensure container fills it */
+            flex-direction: column;
+            justify-content: center;
+            /* Center the container vertically (if it doesn't take 100%) */
+            align-items: center;
+            /* Center the container horizontally (if it doesn't takes 100%) */
+        }
 
-#chat-container {
-width: 100%; /* Occupy 100% of the width of its parent (body) */
-height: 100%; /* Occupy 100% of the height of its parent (body) */
-background-color: #fff;
-border-radius: 0; /* Remove border-radius for true edge-to-edge look */
-box-shadow: none; /* Remove box-shadow for true edge-to-edge look */
-padding: 20px; /* Keep padding inside the container for content */
-display: flex;
-flex-direction: column;
-gap: 15px;
-box-sizing: border-box; /* Crucial: Include padding in width/height calculation */
-}
-h2 {
-margin-top: 0;
-margin-bottom: 15px;
-color: #333;
-text-align: center;
-}
-#chat-log {
-flex-grow: 1; /* Allow chat log to take up available vertical space */
-overflow-y: auto;
-border: 1px solid #ddd;
-padding: 15px;
-border-radius: 4px;
-background-color: #e9ecef;
-display: flex;
-flex-direction: column; /* Ensure messages stack vertically */
-}
-.message-container {
-position: relative; /* Needed for align-self to work if it's a flex item of chat-log */
-display: flex;
-/* align-items: flex-start; Removed as not directly needed here, managed by message div */
-margin-bottom: 10px; /* Space between message containers */
-}
-/* Specific alignment for user/AI message containers (they are flex items of chat-log) */
-.user-message-container {
-align-self: flex-end; /* Push the whole container to the right */
-}
-.ai-message-container {
-align-self: flex-start; /* Push the whole container to the left */
-}
+        #chat-container {
+            width: 100%;
+            /* Occupy 100% of the width of its parent (body) */
+            height: 100%;
+            /* Occupy 100% of the height of its parent (body) */
+            background-color: #fff;
+            border-radius: 0;
+            /* Remove border-radius for true edge-to-edge look */
+            box-shadow: none;
+            /* Remove box-shadow for true edge-to-edge look */
+            padding: 20px;
+            /* Keep padding inside the container for content */
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            box-sizing: border-box;
+            /* Crucial: Include padding in width/height calculation */
+        }
 
-.message {
-padding: 8px 12px;
-border-radius: 15px;
-max-width: 70%;
-word-wrap: break-word; /* Ensure long words break */
-position: relative; /* Crucial for positioning the copy icon *inside* */
-display: inline-block; /* Allow padding to wrap content, but act like block */
-}
-.user-message {
-background-color: #007bff;
-color: white;
-/* Adjust padding to make space for copy icon on the left */
-padding-left: 30px; /* Increased padding */
-padding-right: 12px;
-}
-.ai-message {
-background-color: #6c757d;
-color: white;
-/* Adjust padding to make space for copy icon on the right */
-padding-right: 30px; /* Increased padding */
-padding-left: 12px;
-}
+        h2 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: #333;
+            text-align: center;
+        }
 
-/* New styles for sender label */
-.sender-label {
-    font-size: 0.75em; /* Smaller font size */
-    font-weight: bold;
-    opacity: 0.8; /* Slightly transparent */
-    margin-right: 5px; /* Space between label and message text */
-    vertical-align: middle; /* Align with middle of text */
-}
+        #chat-log {
+            flex-grow: 1;
+            /* Allow chat log to take up available vertical space */
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 4px;
+            background-color: #e9ecef;
+            display: flex;
+            flex-direction: column;
+            /* Ensure messages stack vertically */
+        }
 
-.user-message .sender-label {
-    color: rgba(255, 255, 255, 0.7); /* Slightly lighter for user messages */
-}
+        .message-container {
+            position: relative;
+            /* Needed for align-self to work if it's a flex item of chat-log */
+            display: flex;
+            /* align-items: flex-start; Removed as not directly needed here, managed by message div */
+            margin-bottom: 10px;
+            /* Space between message containers */
+        }
 
-.ai-message .sender-label {
-    color: rgba(255, 255, 255, 0.7); /* Slightly lighter for AI messages */
-}
+        /* Specific alignment for user/AI message containers (they are flex items of chat-log) */
+        .user-message-container {
+            align-self: flex-end;
+            /* Push the whole container to the right */
+        }
 
-/* Copy icon button styles - Gemini-like */
-.copy-icon {
-position: absolute; /* Position relative to the .message (its parent) */
-top: 5px; /* Adjust vertical position */
-background: rgba(0, 0, 0, 0.2); /* Subtle dark background */
-border: none;
-cursor: pointer;
-padding: 3px 6px; /* Padding for the button itself */
-font-size: 14px;
-color: white; /* Icon color */
-border-radius: 5px; /* Slightly rounded */
-opacity: 0; /* Hidden by default */
-pointer-events: none; /* Not clickable when hidden */
-transition: opacity 0.3s ease-in-out, background-color 0.2s ease-in-out; /* Smooth fade and background change */
-}
+        .ai-message-container {
+            align-self: flex-start;
+            /* Push the whole container to the left */
+        }
 
-/* Specific positioning within the message bubble */
-.user-message .copy-icon {
-left: 5px; /* For user message, it's on the left inside the bubble */
-}
-.ai-message .copy-icon {
-right: 5px; /* For AI message, it's on the right inside the bubble */
-}
+        .message {
+            padding: 8px 12px;
+            border-radius: 15px;
+            max-width: 70%;
+            word-wrap: break-word;
+            /* Ensure long words break */
+            position: relative;
+            /* Crucial for positioning the copy icon *inside* */
+            display: inline-block;
+            /* Allow padding to wrap content, but act like block */
+        }
 
-/* Show icon on hover of the message bubble */
-.message:hover .copy-icon {
-opacity: 1; /* **Fully visible on hover** */
-pointer-events: auto; /* **Becomes clickable on hover** */
-}
+        .user-message {
+            background-color: #007bff;
+            color: white;
+            /* Adjust padding to make space for copy icon on the left */
+            padding-left: 30px;
+            /* Increased padding */
+            padding-right: 12px;
+        }
 
-.copy-icon:hover {
-background-color: rgba(0, 0, 0, 0.4); /* Darker background when hovering over the icon */
-}
+        .ai-message {
+            background-color: #6c757d;
+            color: white;
+            /* Adjust padding to make space for copy icon on the right */
+            padding-right: 30px;
+            /* Increased padding */
+            padding-left: 12px;
+        }
 
-/* message text style for enabling wrapping inside container */
-.message-text {
-display: inline-block;
-white-space: pre-wrap; /* preserve formatting and wrap */
-}
+        /* New styles for sender label */
+        .sender-label {
+            font-size: 0.75em;
+            /* Smaller font size */
+            font-weight: bold;
+            opacity: 0.8;
+            /* Slightly transparent */
+            margin-right: 5px;
+            /* Space between label and message text */
+            vertical-align: middle;
+            /* Align with middle of text */
+        }
 
-#input-container {
-display: flex;
-gap: 10px;
-align-items: flex-end; /* Align items to the bottom, useful for textarea */
-}
-#user-input { /* Styles for the textarea */
-flex-grow: 1;
-padding: 10px;
-border: 1px solid #ccc;
-border-radius: 4px;
-font-size: 16px;
-resize: vertical; /* Allow vertical resizing, but not horizontal */
-min-height: 40px; /* Minimum height for the textarea */
-max-height: 150px; /* Optional: Max height to prevent it from growing too big */
-}
-#image-upload {
-padding: 5px; /* Adjust padding for file input */
-border: 1px solid #ccc;
-border-radius: 4px;
-font-size: 14px;
-/* Adjust margin for better alignment with textarea */
-margin-bottom: 3px; /* Small adjustment to align with textarea's text line */
-}
-#send-button {
-padding: 10px 20px;
-background-color: #28a745;
-color: white;
-border: none;
-border-radius: 44px; /* Changed to more rounded */
-cursor: pointer;
-font-size: 16px;
-white-space: nowrap; /* Prevent button text from wrapping */
-/* Adjust margin for better alignment with textarea */
-margin-bottom: 3px;
-}
-#send-button:hover {
-background-color: #218838;
-}
-#save-button, #copy-all-button { /* Styles for save and new copy all buttons */
-padding: 10px 15px;
-background-color: #007bff;
-color: white;
-border: none;
-border-radius: 4px;
-cursor: pointer;
-font-size: 16px;
-white-space: nowrap;
-margin-bottom: 3px;
-}
-#save-button:hover, #copy-all-button:hover {
-background-color: #0056b3;
-}
-#image-preview {
-max-width: 100px;
-max-height: 100px;
-margin-top: 10px;
-border-radius: 4px;
-display: block; /* Ensure it takes up space even when hidden for initial layout */
-}
+        .user-message .sender-label {
+            color: rgba(255, 255, 255, 0.7);
+            /* Slightly lighter for user messages */
+        }
 
-/* Feedback Message Styles */
-#feedback-message {
-    position: fixed;
-    bottom: 80px; /* Above the input container */
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 14px;
-    z-index: 1000;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-#feedback-message.show {
-    opacity: 1;
-}
-/* Model selection styles */
-#model-selection {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-    gap: 10px;
-    margin-bottom: 15px;
-    justify-content: center; /* Center the radio buttons */
-    padding: 10px 0;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    border: 1px solid #eee;
-}
+        .ai-message .sender-label {
+            color: rgba(255, 255, 255, 0.7);
+            /* Slightly lighter for AI messages */
+        }
 
-#model-selection label {
-    background-color: #e0e0e0;
-    padding: 8px 12px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-    font-size: 0.9em;
-    color: #555;
-    user-select: none; /* Prevent text selection on labels */
-}
+        /* Copy icon button styles - Gemini-like */
+        .copy-icon {
+            position: absolute;
+            /* Position relative to the .message (its parent) */
+            top: 5px;
+            /* Adjust vertical position */
+            background: rgba(0, 0, 0, 0.2);
+            /* Subtle dark background */
+            border: none;
+            cursor: pointer;
+            padding: 3px 6px;
+            /* Padding for the button itself */
+            font-size: 14px;
+            color: white;
+            /* Icon color */
+            border-radius: 5px;
+            /* Slightly rounded */
+            opacity: 0;
+            /* Hidden by default */
+            pointer-events: none;
+            /* Not clickable when hidden */
+            transition: opacity 0.3s ease-in-out, background-color 0.2s ease-in-out;
+            /* Smooth fade and background change */
+        }
 
-#model-selection input[type="radio"] {
-    display: none; /* Hide the actual radio button */
-}
+        /* Specific positioning within the message bubble */
+        .user-message .copy-icon {
+            left: 5px;
+            /* For user message, it's on the left inside the bubble */
+        }
 
-#model-selection input[type="radio"]:checked + label {
-    background-color: #007bff;
-    color: white;
-    font-weight: bold;
-}
+        .ai-message .copy-icon {
+            right: 5px;
+            /* For AI message, it's on the right inside the bubble */
+        }
 
-#model-selection label:hover {
-    background-color: #d0d0d0;
-}
-#model-selection input[type="radio"]:checked + label:hover {
-    background-color: #0056b3; /* Darker blue on hover for selected */
-}
+        /* Show icon on hover of the message bubble */
+        .message:hover .copy-icon {
+            opacity: 1;
+            /* **Fully visible on hover** */
+            pointer-events: auto;
+            /* **Becomes clickable on hover** */
+        }
 
-</style>
+        .copy-icon:hover {
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Darker background when hovering over the icon */
+        }
+
+        /* message text style for enabling wrapping inside container */
+        .message-text {
+            display: inline-block;
+            white-space: pre-wrap;
+            /* preserve formatting and wrap */
+        }
+
+        #input-container {
+            display: flex;
+            gap: 10px;
+            align-items: flex-end;
+            /* Align items to the bottom, useful for textarea */
+        }
+
+        #user-input {
+            /* Styles for the textarea */
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            resize: vertical;
+            /* Allow vertical resizing, but not horizontal */
+            min-height: 40px;
+            /* Minimum height for the textarea */
+            max-height: 150px;
+            /* Optional: Max height to prevent it from growing too big */
+        }
+
+        #image-upload {
+            padding: 5px;
+            /* Adjust padding for file input */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+            /* Adjust margin for better alignment with textarea */
+            margin-bottom: 3px;
+            /* Small adjustment to align with textarea's text line */
+        }
+
+        #send-button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 44px;
+            /* Changed to more rounded */
+            cursor: pointer;
+            font-size: 16px;
+            white-space: nowrap;
+            /* Prevent button text from wrapping */
+            /* Adjust margin for better alignment with textarea */
+            margin-bottom: 3px;
+        }
+
+        #send-button:hover {
+            background-color: #218838;
+        }
+
+        #save-button,
+        #copy-all-button {
+            /* Styles for save and new copy all buttons */
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            white-space: nowrap;
+            margin-bottom: 3px;
+        }
+
+        #save-button:hover,
+        #copy-all-button:hover {
+            background-color: #0056b3;
+        }
+
+        #image-preview {
+            max-width: 100px;
+            max-height: 100px;
+            margin-top: 10px;
+            border-radius: 4px;
+            display: block;
+            /* Ensure it takes up space even when hidden for initial layout */
+        }
+
+        /* Feedback Message Styles */
+        #feedback-message {
+            position: fixed;
+            bottom: 80px;
+            /* Above the input container */
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 14px;
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        #feedback-message.show {
+            opacity: 1;
+        }
+
+        /* Model selection styles */
+        #model-selection {
+            display: flex;
+            flex-wrap: wrap;
+            /* Allow items to wrap to the next line */
+            gap: 10px;
+            margin-bottom: 15px;
+            justify-content: center;
+            /* Center the radio buttons */
+            padding: 10px 0;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            border: 1px solid #eee;
+        }
+
+        #model-selection label {
+            background-color: #e0e0e0;
+            padding: 8px 12px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            font-size: 0.9em;
+            color: #555;
+            user-select: none;
+            /* Prevent text selection on labels */
+        }
+
+        #model-selection input[type="radio"] {
+            display: none;
+            /* Hide the actual radio button */
+        }
+
+        #model-selection input[type="radio"]:checked+label {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+        }
+
+        #model-selection label:hover {
+            background-color: #d0d0d0;
+        }
+
+        #model-selection input[type="radio"]:checked+label:hover {
+            background-color: #0056b3;
+            /* Darker blue on hover for selected */
+        }
+    </style>
 </head>
+
 <body>
-<div id="chat-container">
-<h2>Puter AI Interactive Chat</h2>
-<div id="model-selection">
-    <input type="radio" id="gpt-4.5-preview" name="ai-model" value="gpt-4.5-preview" checked>
-    <label for="gpt-4.5-preview">gpt-4.5-preview</label>
+    <div id="chat-container">
+        <h2>Puter AI Interactive Chat</h2>
+        <div id="model-selection">
+       
+                <input type="radio" id="o4-mini" name="ai-model" value="o4-mini">
+                <label for="o4-mini">o4-mini</label>
+            
+                <input type="radio" id="gpt-4.1" name="ai-model" value="gpt-4.1">
+                <label for="gpt-4.1">gpt-4.1</label>
+           
+                <input type="radio" id="gpt-4.5-preview" name="ai-model" value="gpt-4.5-preview">
+                <label for="gpt-4.5-preview">gpt-4.5-preview</label>
+            
+                <input type="radio" id="claude-sonnet-4" name="ai-model" value="claude-sonnet-4">
+                <label for="claude-sonnet-4">claude-sonnet-4</label>
+            
+                <input type="radio" id="claude-opus-4" name="ai-model" value="claude-opus-4">
+                <label for="claude-opus-4">claude-opus-4</label>
+            
+                <input type="radio" id="claude-3-7-sonnet" name="ai-model" value="claude-3-7-sonnet">
+                <label for="claude-3-7-sonnet">claude-3-7-sonnet</label>
+            
+                <input type="radio" id="claude-3-5-sonnet" name="ai-model" value="claude-3-5-sonnet">
+                <label for="claude-3-5-sonnet">claude-3-5-sonnet</label>
+            
+                <input type="radio" id="deepseek-chat" name="ai-model" value="deepseek-chat">
+                <label for="deepseek-chat">deepseek-chat</label>
+            
+                <input type="radio" id="deepseek-reasoner" name="ai-model" value="deepseek-reasoner">
+                <label for="deepseek-reasoner">deepseek-reasoner</label>
+            
+                <input type="radio" id="gemini-2.0-flash" name="ai-model" value="gemini-2.0-flash">
+                <label for="gemini-2.0-flash">gemini-2.0-flash</label>
+        
+                <input type="radio" id="llama-3.1-405B" name="ai-model" value="meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo">
+                <label for="llama-3.1-405B">meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo</label>
+            
+                <input type="radio" id="mistral-large-latest" name="ai-model" value="mistral-large-latest">
+                <label for="mistral-large-latest">mistral-large-latest</label>
+            
+                <input type="radio" id="pixtral-large-latest" name="ai-model" value="pixtral-large-latest">
+                <label for="pixtral-large-latest">pixtral-large-latest</label>
+            
+                <input type="radio" id="codestral-latest" name="ai-model" value="codestral-latest">
+                <label for="codestral-latest">codestral-latest</label>
+            
+                <input type="radio" id="gemma-2-27b-it" name="ai-model" value="google/gemma-2-27b-it">
+                <label for="gemma-2-27b-it">google/gemma-2-27b-it</label>
+            
+                <input type="radio" id="grok-beta" name="ai-model" value="grok-beta">
+                <label for="grok-beta">grok-beta</label>
+        </div>
 
-    <input type="radio" id="gpt-4o" name="ai-model" value="gpt-4o">
-    <label for="gpt-4o">gpt-4o</label>
-    
-    <input type="radio" id="gemini-2.5-flash" name="ai-model" value="google/gemini-2.5-flash-preview">
-    <label for="gemini-2.5-flash">gemini-2.5-flash-preview</label>
+        <div id="chat-log"></div>
+        <div id="input-container">
+            <textarea id="user-input" placeholder="Ask me anything..." rows="1"></textarea>
+            <input type="file" id="image-upload" accept="image/*">
+            <button id="send-button">Send</button>
+            <button id="save-button">Save Chat</button>
+            <button id="copy-all-button">Copy All</button>
+        </div>
+        <img id="image-preview" src="" alt="Image Preview" style="display: none;">
 
-    <input type="radio" id="gemini-2.5-pro" name="ai-model" value="google/gemini-2.5-pro-exp-03-25:free">
-    <label for="gemini-2.5-pro">gemini-2.5-pro-exp-03-25:free</label>
+        <div id="feedback-message"></div>
+    </div>
 
-    <input type="radio" id="claude-sonnet-4" name="ai-model" value="claude-sonnet-4">
-    <label for="claude-sonnet-4">claude-sonnet-4</label>
+    <script>
+        const chatLog = document.getElementById('chat-log');
+        const userInput = document.getElementById('user-input');
+        const sendButton = document.getElementById('send-button');
+        const imageUpload = document.getElementById('image-upload');
+        const imagePreview = document.getElementById('image-preview');
+        const saveButton = document.getElementById('save-button');
+        const copyAllButton = document.getElementById('copy-all-button');
+        const feedbackMessage = document.getElementById('feedback-message');
+        let selectedImageURL = null; // Stores the image URL from file input or paste
+        const modelSelectionDiv = document.getElementById('model-selection'); // Get the model selection div
+        let selectedModel = 'gpt-4.5-preview'; // Default AI model
 
-    <input type="radio" id="deepseek-chat" name="ai-model" value="deepseek-chat">
-    <label for="deepseek-chat">deepseek-chat</label>
-
-    <input type="radio" id="deepseek-reasoner" name="ai-model" value="deepseek-reasoner">
-    <label for="deepseek-reasoner">deepseek-reasoner</label>
-</div>
-
-<div id="chat-log"></div>
-<div id="input-container">
-<textarea id="user-input" placeholder="Ask me anything..." rows="1"></textarea>
-<input type="file" id="image-upload" accept="image/*">
-<button id="send-button">Send</button>
-<button id="save-button">Save Chat</button>
-<button id="copy-all-button">Copy All</button>
-</div>
-<img id="image-preview" src="" alt="Image Preview" style="display: none;">
-
-<div id="feedback-message"></div>
-</div>
-
-<script>
-const chatLog = document.getElementById('chat-log');
-const userInput = document.getElementById('user-input');
-const sendButton = document.getElementById('send-button');
-const imageUpload = document.getElementById('image-upload');
-const imagePreview = document.getElementById('image-preview');
-const saveButton = document.getElementById('save-button');
-const copyAllButton = document.getElementById('copy-all-button');
-const feedbackMessage = document.getElementById('feedback-message');
-let selectedImageURL = null; // Stores the image URL from file input or paste
-const modelSelectionDiv = document.getElementById('model-selection'); // Get the model selection div
-let selectedModel = 'gpt-4.5-preview'; // Default AI model
-
-// Set initial selected model based on checked radio button
-document.addEventListener('DOMContentLoaded', () => {
-    const checkedRadio = document.querySelector('input[name="ai-model"]:checked');
-    if (checkedRadio) {
-        selectedModel = checkedRadio.value;
-    }
-});
-
-// Update selectedModel when a radio button is changed
-modelSelectionDiv.addEventListener('change', (event) => {
-    if (event.target.name === 'ai-model') {
-        selectedModel = event.target.value;
-        showFeedback(`AI model changed to: ${selectedModel}`);
-    }
-});
-
-
-// Helper function to escape HTML entities
-function escapeHtml(text) {
-const map = {
-'&': '&amp;',
-'<': '&lt;',
-'>': '&gt;',
-'"': '&quot;',
-"'": '&#039;'
-};
-return text.replace(/[&<>"']/g, function(m) { return map[m]; });
-}
-
-// Function to show a temporary feedback message
-function showFeedback(message) {
-    feedbackMessage.textContent = message;
-    feedbackMessage.classList.add('show');
-    setTimeout(() => {
-        feedbackMessage.classList.remove('show');
-    }, 2000);
-}
-
-// Function to add messages to the chat log
-function addMessage(message, sender) {
-    const container = document.createElement('div');
-    container.classList.add('message-container');
-    container.classList.add(sender === 'user' ? 'user-message-container' : 'ai-message-container');
-
-    const messageDiv = document.createElement('div');
-    messageDiv.classList.add('message');
-    messageDiv.classList.add(sender === 'user' ? 'user-message' : 'ai-message');
-
-    // Add sender label
-    const senderLabel = document.createElement('span');
-    senderLabel.classList.add('sender-label');
-    senderLabel.textContent = sender === 'user' ? 'You:' : 'AI:';
-    messageDiv.appendChild(senderLabel);
-
-    let displayMessage = String(message || '');
-    displayMessage = escapeHtml(displayMessage);
-    displayMessage = displayMessage.replace(/\n/g, '<br>');
-
-    const messageTextSpan = document.createElement('span');
-    messageTextSpan.className = 'message-text';
-    messageTextSpan.innerHTML = displayMessage;
-
-    messageDiv.appendChild(messageTextSpan);
-
-    // Create copy button
-    const copyBtn = document.createElement('button');
-    copyBtn.className = 'copy-icon';
-    copyBtn.innerHTML = '📋'; // Clipboard emoji as icon
-
-    // Add event listener for copy
-    copyBtn.addEventListener('click', (event) => {
-        event.stopPropagation(); // Prevent message container click if it had one
-        // When copying, we only want the message text, not the "AI:" or "You:" label
-        const textToCopy = messageTextSpan.innerText; 
-        navigator.clipboard.writeText(textToCopy).then(() => {
-            copyBtn.innerHTML = '✅';
-            setTimeout(() => {
-                copyBtn.innerHTML = '📋';
-            }, 1000);
-            showFeedback('Message copied!');
-        }).catch(err => {
-            console.error('Failed to copy message: ', err);
-            showFeedback('Failed to copy message.');
+        // Set initial selected model based on checked radio button
+        document.addEventListener('DOMContentLoaded', () => {
+            const checkedRadio = document.querySelector('input[name="ai-model"]:checked');
+            if (checkedRadio) {
+                selectedModel = checkedRadio.value;
+            }
         });
-    });
 
-    // Append copy button to the messageDiv (so its position can be relative to message bubble)
-    messageDiv.appendChild(copyBtn); 
-    container.appendChild(messageDiv); // Append the messageDiv to the container
+        // Update selectedModel when a radio button is changed
+        modelSelectionDiv.addEventListener('change', (event) => {
+            if (event.target.name === 'ai-model') {
+                selectedModel = event.target.value;
+                showFeedback(`AI model changed to: ${selectedModel}`);
+            }
+        });
 
-    chatLog.appendChild(container);
-    chatLog.scrollTop = chatLog.scrollHeight;
-}
 
-// Function to auto-resize the textarea
-function autoResizeTextarea() {
-    userInput.style.height = 'auto';
-    userInput.style.height = userInput.scrollHeight + 'px';
-}
-
-// Handle sending messages
-async function sendMessage() {
-    const message = userInput.value.trim();
-    
-    // Determine the prompt text
-    let promptText = message;
-    if (message === '' && selectedImageURL) {
-        promptText = "What do you see in this image?"; // Default prompt if only an image
-    } else if (message === '' && !selectedImageURL) {
-        // No message and no image, do nothing
-        return; 
-    }
-
-    addMessage(message, 'user'); // Add user's text message (even if empty, for image context)
-    userInput.value = '';
-    userInput.style.height = '40px';
-
-    // Clear image immediately after adding user message
-    if (selectedImageURL) {
-        selectedImageURL = null; // Clear image after sending
-        imagePreview.style.display = 'none';
-        imageUpload.value = ''; // Clear file input
-        imagePreview.src = '';
-    }
-
-    try {
-        let response;
-        const chatOptions = { model: selectedModel };
-
-        if (selectedImageURL) {
-            chatOptions.image = selectedImageURL; // Add image to options if present
+        // Helper function to escape HTML entities
+        function escapeHtml(text) {
+            const map = {
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                '"': '&quot;',
+                "'": '&#039;'
+            };
+            return text.replace(/[&<>"']/g, function (m) { return map[m]; });
         }
 
-        response = await puter.ai.chat(promptText, chatOptions);
-        if (!response) {
-            showFeedback('no response!');
-
-        } else {
-            addMessage(response, 'ai');
+        // Function to show a temporary feedback message
+        function showFeedback(message) {
+            feedbackMessage.textContent = message;
+            feedbackMessage.classList.add('show');
+            setTimeout(() => {
+                feedbackMessage.classList.remove('show');
+            }, 2000);
         }
-    } catch (error) {
-        showFeedback(error.message);
-        console.log(error);
-    }
-}
 
-// Function to get chat content by *removing* copy icons for export
-function getChatContentHtmlForExport() {
-    const copyIcons = chatLog.querySelectorAll('.copy-icon');
-    const removedIcons = [];
+        // Function to add messages to the chat log
+        function addMessage(message, sender) {
+            const container = document.createElement('div');
+            container.classList.add('message-container');
+            container.classList.add(sender === 'user' ? 'user-message-container' : 'ai-message-container');
 
-    // Temporarily remove each copy icon from the DOM
-    copyIcons.forEach(icon => {
-        removedIcons.push({ parent: icon.parentNode, icon: icon }); // Store parent to re-add
-        icon.remove(); // Remove the element
-    });
+            const messageDiv = document.createElement('div');
+            messageDiv.classList.add('message');
+            messageDiv.classList.add(sender === 'user' ? 'user-message' : 'ai-message');
 
-    const content = chatLog.innerHTML; // Get HTML without the removed icons
+            // Add sender label
+            const senderLabel = document.createElement('span');
+            senderLabel.classList.add('sender-label');
+            senderLabel.textContent = sender === 'user' ? 'You:' : 'AI:';
+            messageDiv.appendChild(senderLabel);
 
-    // Re-add the copy icons to their original positions in the DOM
-    removedIcons.forEach(item => {
-        item.parent.appendChild(item.icon); // Append back to its parent
-    });
-    
-    return content;
-}
+            let displayMessage = String(message || '');
+            displayMessage = escapeHtml(displayMessage);
+            displayMessage = displayMessage.replace(/\n/g, '<br>');
 
-// Helper function to generate the full HTML content for export (unified)
-function generateFullHtmlContent() {
-    const chatContent = getChatContentHtmlForExport(); // This now returns HTML *without* copy icons
-    const currentDate = new Date();
-    
-    return `
+            const messageTextSpan = document.createElement('span');
+            messageTextSpan.className = 'message-text';
+            messageTextSpan.innerHTML = displayMessage;
+
+            messageDiv.appendChild(messageTextSpan);
+
+            // Create copy button
+            const copyBtn = document.createElement('button');
+            copyBtn.className = 'copy-icon';
+            copyBtn.innerHTML = '📋'; // Clipboard emoji as icon
+
+            // Add event listener for copy
+            copyBtn.addEventListener('click', (event) => {
+                event.stopPropagation(); // Prevent message container click if it had one
+                // When copying, we only want the message text, not the "AI:" or "You:" label
+                const textToCopy = messageTextSpan.innerText;
+                navigator.clipboard.writeText(textToCopy).then(() => {
+                    copyBtn.innerHTML = '✅';
+                    setTimeout(() => {
+                        copyBtn.innerHTML = '📋';
+                    }, 1000);
+                    showFeedback('Message copied!');
+                }).catch(err => {
+                    console.error('Failed to copy message: ', err);
+                    showFeedback('Failed to copy message.');
+                });
+            });
+
+            // Append copy button to the messageDiv (so its position can be relative to message bubble)
+            messageDiv.appendChild(copyBtn);
+            container.appendChild(messageDiv); // Append the messageDiv to the container
+
+            chatLog.appendChild(container);
+            chatLog.scrollTop = chatLog.scrollHeight;
+        }
+
+        // Function to auto-resize the textarea
+        function autoResizeTextarea() {
+            userInput.style.height = 'auto';
+            userInput.style.height = userInput.scrollHeight + 'px';
+        }
+
+        // // Handle sending messages
+        async function sendMessage() {
+            const message = userInput.value.trim();
+
+            // Determine the prompt text
+            let promptText = message;
+            if (message === '' && selectedImageURL) {
+                promptText = "What do you see in this image?"; // Default prompt if only an image
+            } else if (message === '' && !selectedImageURL) {
+                // No message and no image, do nothing
+                return;
+            }
+
+            addMessage(message, 'user'); // Add user's text message (even if empty, for image context)
+            userInput.value = '';
+            userInput.style.height = '40px';
+
+
+            try {
+                let response;
+                let chatOptions = { model: selectedModel };
+
+                if (selectedImageURL) {
+                    chatOptions = selectedImageURL; // Add image to options if present
+                }
+
+                response = await puter.ai.chat(promptText, chatOptions);
+                if (!response) {
+                    showFeedback('no response!');
+                } else {
+                    addMessage(response, 'ai');
+                    // 
+                    // Clear image immediately after adding user message
+                    if (selectedImageURL) {
+                        selectedImageURL = null; // Clear image after sending
+                        imagePreview.style.display = 'none';
+                        imageUpload.value = ''; // Clear file input
+                        imagePreview.src = '';
+                    }
+                }
+
+
+            } catch (error) {
+                showFeedback(error.message);
+                console.log(error);
+            }
+        }
+
+
+// // Handle sending messages
+// async function sendMessage() {
+//     const message = userInput.value.trim();
+//     if (message === '' && !selectedImageURL) {
+//         return; // Don't send empty messages with no image
+//     }
+
+//     addMessage(message, 'user');
+//     userInput.value = '';
+//     userInput.style.height = '40px';
+
+//     try {
+//         let response;
+//         const promptText = message === '' && selectedImageURL ? "What do you see in this image?" : message;
+
+//         if (selectedImageURL) {
+//             response = await puter.ai.chat(promptText, selectedImageURL);
+//             selectedImageURL = null; // Clear image after sending
+//             imagePreview.style.display = 'none';
+//             imageUpload.value = ''; // Clear file input
+//             imagePreview.src = '';
+//         } else {
+//             response = await puter.ai.chat(promptText);
+//         }
+//         addMessage(response, 'ai');
+//     } catch (error) {
+//         console.error("Error communicating with Puter AI:", error);
+//         addMessage("Oops! Something went wrong. Please try again.", 'ai');
+//     }
+// }
+
+
+
+        // Function to get chat content by *removing* copy icons for export
+        function getChatContentHtmlForExport() {
+            const copyIcons = chatLog.querySelectorAll('.copy-icon');
+            const removedIcons = [];
+
+            // Temporarily remove each copy icon from the DOM
+            copyIcons.forEach(icon => {
+                removedIcons.push({ parent: icon.parentNode, icon: icon }); // Store parent to re-add
+                icon.remove(); // Remove the element
+            });
+
+            const content = chatLog.innerHTML; // Get HTML without the removed icons
+
+            // Re-add the copy icons to their original positions in the DOM
+            removedIcons.forEach(item => {
+                item.parent.appendChild(item.icon); // Append back to its parent
+            });
+
+            return content;
+        }
+
+        // Helper function to generate the full HTML content for export (unified)
+        function generateFullHtmlContent() {
+            const chatContent = getChatContentHtmlForExport(); // This now returns HTML *without* copy icons
+            const currentDate = new Date();
+
+            return `
         <!DOCTYPE html>
         <html>
         <head>
@@ -575,127 +722,132 @@ function generateFullHtmlContent() {
         </body>
         </html>
     `;
-}
+        }
 
 
-// Function to save the chat log as a Word-compatible HTML file (.doc)
-function saveChatAsWord() {
-    const fullHtmlContent = generateFullHtmlContent(); // Use the unified function
-    const currentDate = new Date(); 
-    const formattedDate = currentDate.toLocaleDateString(undefined, {
-        year: 'numeric', month: '2-digit', day: '2-digit'
-    }).replace(/\//g, '-');
-    const formattedTime = currentDate.toLocaleTimeString(undefined, {
-        hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false
-    }).replace(/:/g, '-');
+        // Function to save the chat log as a Word-compatible HTML file (.doc)
+        function saveChatAsWord() {
+            const fullHtmlContent = generateFullHtmlContent(); // Use the unified function
+            const currentDate = new Date();
+            const formattedDate = currentDate.toLocaleDateString(undefined, {
+                year: 'numeric', month: '2-digit', day: '2-digit'
+            }).replace(/\//g, '-');
+            const formattedTime = currentDate.toLocaleTimeString(undefined, {
+                hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false
+            }).replace(/:/g, '-');
 
-    const fileName = `ChatLog_${formattedDate}_${formattedTime}.doc`;
+            const fileName = `ChatLog_${formattedDate}_${formattedTime}.doc`;
 
-    const blob = new Blob([fullHtmlContent], { type: 'application/msword' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = fileName;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-    showFeedback('Chat saved as Word file!');
-}
+            const blob = new Blob([fullHtmlContent], { type: 'application/msword' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = fileName;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            showFeedback('Chat saved as Word file!');
+        }
 
-// Function to copy all chat messages with rich formatting (like saving to Word)
-async function copyAllMessages() {
-    const fullHtmlContent = generateFullHtmlContent(); // Use the unified function
+        // Function to copy all chat messages with rich formatting (like saving to Word)
+        async function copyAllMessages() {
+            const fullHtmlContent = generateFullHtmlContent(); // Use the unified function
 
-    // Create a temporary div to get the plain text version as a fallback
-    const tempDiv = document.createElement('div');
-    tempDiv.innerHTML = fullHtmlContent;
-    const plainTextContent = tempDiv.innerText;
-    tempDiv.remove(); // Clean up
+            // Create a temporary div to get the plain text version as a fallback
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = fullHtmlContent;
+            const plainTextContent = tempDiv.innerText;
+            tempDiv.remove(); // Clean up
 
-    // Basic check for meaningful content
-    const hasMessages = chatLog.querySelector('.message-container'); 
-    if (!hasMessages) { 
-        showFeedback('No chat history to copy.');
-        return;
-    }
+            // Basic check for meaningful content
+            const hasMessages = chatLog.querySelector('.message-container');
+            if (!hasMessages) {
+                showFeedback('No chat history to copy.');
+                return;
+            }
 
-    try {
-        // Use ClipboardItem to copy both HTML and plain text
-        const htmlBlob = new Blob([fullHtmlContent], { type: 'text/html' });
-        const textBlob = new Blob([plainTextContent], { type: 'text/plain' });
+            try {
+                // Use ClipboardItem to copy both HTML and plain text
+                const htmlBlob = new Blob([fullHtmlContent], { type: 'text/html' });
+                const textBlob = new Blob([plainTextContent], { type: 'text/plain' });
 
-        const clipboardItem = new ClipboardItem({
-            'text/html': htmlBlob,
-            'text/plain': textBlob
+                const clipboardItem = new ClipboardItem({
+                    'text/html': htmlBlob,
+                    'text/plain': textBlob
+                });
+
+                await navigator.clipboard.write([clipboardItem]);
+                showFeedback('Chat history (rich text) copied to clipboard!');
+            } catch (err) {
+                console.error('Failed to copy chat history:', err);
+                showFeedback('Failed to copy chat history. Check browser permissions.');
+            }
+        }
+
+
+        // Event listeners
+        sendButton.addEventListener('click', sendMessage);
+        userInput.addEventListener('keydown', function (event) {
+            if (event.key === 'Enter' && !event.shiftKey) {
+                event.preventDefault();
+                sendMessage();
+            }
         });
+        userInput.addEventListener('input', autoResizeTextarea);
 
-        await navigator.clipboard.write([clipboardItem]);
-        showFeedback('Chat history (rich text) copied to clipboard!');
-    } catch (err) {
-        console.error('Failed to copy chat history:', err);
-        showFeedback('Failed to copy chat history. Check browser permissions.');
-    }
-}
-
-
-// Event listeners
-sendButton.addEventListener('click', sendMessage);
-userInput.addEventListener('keydown', function(event) {
-    if (event.key === 'Enter' && !event.shiftKey) {
-        event.preventDefault();
-        sendMessage();
-    }
-});
-userInput.addEventListener('input', autoResizeTextarea);
-
-// **Handle file input change (existing logic)**
-imageUpload.addEventListener('change', function(event) {
-    const file = event.target.files[0];
-    if (file) {
-        const reader = new FileReader();
-        reader.onload = function(e) {
-            selectedImageURL = e.target.result;
-            imagePreview.src = selectedImageURL;
-            imagePreview.style.display = 'block';
-        };
-        reader.readAsDataURL(file);
-    } else {
-        selectedImageURL = null;
-        imagePreview.style.display = 'none';
-        imagePreview.src = '';
-    }
-});
-
-// **NEW: Handle paste event for images**
-document.addEventListener('paste', function(event) {
-    // Check if the paste event contains files (like images)
-    const items = event.clipboardData.items;
-    for (let i = 0; i < items.length; i++) {
-        if (items[i].type.indexOf('image') !== -1) {
-            const file = items[i].getAsFile();
+        // **Handle file input change (existing logic)**
+        imageUpload.addEventListener('change', function (event) {
+            const file = event.target.files[0];
             if (file) {
                 const reader = new FileReader();
-                reader.onload = function(e) {
+                reader.onload = function (e) {
                     selectedImageURL = e.target.result;
                     imagePreview.src = selectedImageURL;
                     imagePreview.style.display = 'block';
-                    showFeedback('Image pasted! Press Send to chat.');
                 };
                 reader.readAsDataURL(file);
-                event.preventDefault(); // Prevent default paste behavior (e.g., pasting into textarea)
-                return; // Only process the first image found
+            } else {
+                selectedImageURL = null;
+                imagePreview.style.display = 'none';
+                imagePreview.src = '';
             }
-        }
-    }
-});
+        });
 
 
-saveButton.addEventListener('click', saveChatAsWord);
-copyAllButton.addEventListener('click', copyAllMessages);
 
-// Initial message from AI
-addMessage("Hello! I'm your interactive AI. How can I help you today?", 'ai');
-</script>
+        // **NEW: Handle paste event for images**
+        document.addEventListener('paste', function (event) {
+            // Check if the paste event contains files (like images)
+            const items = event.clipboardData.items;
+            for (let i = 0; i < items.length; i++) {
+                if (items[i].type.indexOf('image') !== -1) {
+                    const file = items[i].getAsFile();
+                    if (file) {
+                        const reader = new FileReader();
+                        reader.onload = function (e) {
+                            selectedImageURL = e.target.result;
+                            imagePreview.src = selectedImageURL;
+                            imagePreview.style.display = 'block';
+                            showFeedback('Image pasted! Press Send to chat.');
+                        };
+                        reader.readAsDataURL(file);
+                        event.preventDefault(); // Prevent default paste behavior (e.g., pasting into textarea)
+                        return; // Only process the first image found
+                    }
+                }
+            }
+        });
+
+
+
+
+        saveButton.addEventListener('click', saveChatAsWord);
+        copyAllButton.addEventListener('click', copyAllMessages);
+
+        // Initial message from AI
+        addMessage("Hello! I'm your interactive AI. How can I help you today?", 'ai');
+    </script>
 </body>
+
 </html>
