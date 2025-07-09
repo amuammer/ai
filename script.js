@@ -133,10 +133,12 @@ async function sendMessage() {
         let chatOptions = { model: selectedModel };
 
         if (selectedImageURL) {
-            chatOptions = selectedImageURL; // Add image to options if present
+            // chatOptions = selectedImageURL; // Add image to options if present
+            response = await puter.ai.chat(promptText, selectedImageURL, false, chatOptions);
+        } else {
+            response = await puter.ai.chat(promptText, chatOptions);
         }
 
-        response = await puter.ai.chat(promptText, chatOptions);
         if (!response) {
             showFeedback('no response!');
         } else {
@@ -153,9 +155,12 @@ async function sendMessage() {
 
 
     } catch (error) {
-        showFeedback(error.message);
+        showFeedback(error.message || error.error.message);
+        if (error.error && error.error.delegate === "usage-limited-chat") {
+            addMessage("usage-limited-chat");
+        }
         console.log(error);
-    }
+}
 }
 
 
