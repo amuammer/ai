@@ -135,7 +135,12 @@ async function sendMessage(isClarify = false) {
         - Possible interpretations
         3. Suggested Clarified Prompt: A revised version of the original prompt, rewritten to eliminate the identified ambiguities by providing the necessary context, constraints, and details.
         --
-        plz structure your answer in below json format
+        Requirements:
+        - Preserve original intent
+        - Add specific reasonablle assumption for missing parameters
+        - Keep the tone consitstent
+        - Group dimensions by impact level
+        - Plz structure your answer in below json format
         { 
             originalPrompt,
             ambiguityRating,
@@ -375,7 +380,7 @@ async function copyAllMessages() {
 
 
 // Event listeners
-sendButton.addEventListener('click', sendMessage);
+sendButton.addEventListener('click', () => sendMessage());
 userInput.addEventListener('keydown', function (event) {
     if (event.key === 'Enter' && !event.shiftKey) {
         event.preventDefault();
@@ -477,7 +482,7 @@ function showClarifyModal(response) {
         <thead>
           <tr>
             <th>Dimension Name</th>
-            <th>Impact Level</th>
+            <th class="impact-level">Impact Level</th>
             <th>Specific Ambiguous Aspects</th>
             <th>Possible Interpretations</th>
           </tr>

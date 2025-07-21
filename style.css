@@ -401,6 +401,11 @@ h2 {
   white-space: pre-line;
   box-shadow: 0 1px 4px #161b211a;
 }
+
+#impact-level {
+    max-width: 20px;
+}
+
 /* end modal style */
 
 #save-button,
