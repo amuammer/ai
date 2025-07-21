@@ -133,12 +133,12 @@ async function sendMessage(isClarify = false) {
         - Impact level (Critical/High/Medium/Low)
         - Specific ambiguous aspects
         - Possible interpretations
-        3. Suggested Clarified Prompt: A revised version of the original prompt, rewritten to eliminate the identified ambiguities by providing the necessary context, constraints, and details.
+        3. Three diverse, Suggested Clarified Prompts: Provide three revised versions of the original prompt. Each version should explore a different likely user intent by making different reasonable assumptions for the missing parameters.
         --
         Requirements:
         - Preserve original intent
-        - Add specific reasonablle assumption for missing parameters
-        - Keep the tone consitstent
+        - Add specific reasonable assumption for missing parameters
+        - Keep the tone consistent
         - Group dimensions by impact level
         - Plz structure your answer in below json format
         { 
