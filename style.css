@@ -239,6 +239,170 @@ h2 {
     background-color: #218838;
 }
 
+#clarify-button {
+    padding: 10px 20px;
+    background-color: yellow;
+    color: white;
+    border: none;
+    border-radius: 44px;
+    /* Changed to more rounded */
+    cursor: pointer;
+    font-size: 16px;
+    white-space: nowrap;
+    /* Prevent button text from wrapping */
+    /* Adjust margin for better alignment with textarea */
+    margin-bottom: 3px;
+}
+
+#clarify-button:hover {
+    background-color: #218838;
+}
+
+/* Popup styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 8% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+    max-width: none; /* or increase it if you want */
+    border-radius: 10px;
+    position: relative;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 26px #333a;
+    word-break: break-word;
+}
+
+.modal-close {
+    color: #aaa;
+    position: absolute;
+    top: 7px;
+    right: 16px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    color: #333;
+}
+
+/* Clarify Modal Formatting */
+.clarify-modal-section h3 {
+  margin-top: 0;
+  font-size: 1.3em;
+  color: #183153;
+}
+
+.clarify-modal-block {
+  margin-bottom: 18px;
+  background: #f9fafb;
+  padding: 14px 16px;
+  border-radius: 8px;
+  border-left: 4px solid #a9cdf6;
+  box-shadow: 0 2px 6px #2442621a;
+}
+
+.clarify-rating {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-left: 8px;
+  color: #d2691e;
+  background: #fce5cd;
+  border-radius: 6px;
+  padding: 2px 8px;
+}
+
+.clarify-modal-description {
+  color: #444;
+  font-size: 0.98em;
+  margin-top: 8px;
+}
+
+.clarify-modal-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.96em;
+  background: white;
+}
+
+.clarify-modal-table thead th {
+  background: #edf4fa;
+  color: #294461;
+  font-weight: bold;
+  padding: 7px;
+  border-bottom: 1px solid #c9d8e6;
+}
+
+.clarify-modal-table td {
+  padding: 7px;
+  border-bottom: 1px solid #eef2f6;
+}
+
+.clarify-table-scroll {
+  overflow-x: auto;
+}
+
+.critical {
+  background: #f76960;
+  color: white;
+  border-radius: 5px;
+  padding: 2px 7px;
+  font-weight: bold;
+}
+
+.high {
+  background: #f7b660;
+  color: #4b2e05;
+  border-radius: 5px;
+  padding: 2px 7px;
+  font-weight: bold;
+}
+
+.medium {
+  background: #ffe387;
+  color: #573a01;
+  border-radius: 5px;
+  padding: 2px 7px;
+  font-weight: bold;
+}
+
+.low {
+  background: #d7f6bb;
+  color: #355721;
+  border-radius: 5px;
+  padding: 2px 7px;
+  font-weight: bold;
+}
+
+.clarify-modal-codebox {
+  background: #20263a;
+  color: #f6f6e7;
+  padding: 1px 1px;
+  border-radius: 7px;
+  font-size: 1em;
+  font-family: 'Fira Mono','Menlo','Monaco',monospace;
+  word-break: break-word;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  white-space: pre-line;
+  box-shadow: 0 1px 4px #161b211a;
+}
+/* end modal style */
+
 #save-button,
 #copy-all-button {
     /* Styles for save and new copy all buttons */

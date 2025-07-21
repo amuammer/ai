@@ -8,7 +8,7 @@ const copyAllButton = document.getElementById('copy-all-button');
 const feedbackMessage = document.getElementById('feedback-message');
 let selectedImageURL = null; // Stores the image URL from file input or paste
 const modelSelectionDiv = document.getElementById('model-selection'); // Get the model selection div
-let selectedModel = 'gpt-4.5-preview'; // Default AI model
+let selectedModel = 'gpt-4.1'; // Default AI model
 
 // Set initial selected model based on checked radio button
 document.addEventListener('DOMContentLoaded', () => {
@@ -111,7 +111,7 @@ function autoResizeTextarea() {
 }
 
 // // Handle sending messages
-async function sendMessage() {
+async function sendMessage(isClarify = false) {
     const message = userInput.value.trim();
 
     // Determine the prompt text
@@ -123,11 +123,37 @@ async function sendMessage() {
         return;
     }
 
-    addMessage(message, 'user'); // Add user's text message (even if empty, for image context)
-    userInput.value = '';
-    userInput.style.height = '40px';
-
-
+    // If isClarify is true, we want to return the response for modal display
+    if (isClarify) {
+        promptText = `Analyze the ambiguity level of this prompt: "${promptText}"
+        Provide:
+        1. An ambiguity rating (0-100 scale, where 0 = perfectly clear, 100 = completely ambiguous)
+        2. A structured table showing all ambiguous dimensions with the following columns:
+        - Dimension name
+        - Impact level (Critical/High/Medium/Low)
+        - Specific ambiguous aspects
+        - Possible interpretations
+        3. Suggested Clarified Prompt: A revised version of the original prompt, rewritten to eliminate the identified ambiguities by providing the necessary context, constraints, and details.
+        --
+        plz structure your answer in below json format
+        { 
+            originalPrompt,
+            ambiguityRating,
+            analysisTable: [
+                {
+                    dimensionName,
+                    impactLevel,
+                    specificAmbiguousAspects,
+                    possibleInterpretations
+                }
+            ],
+            suggestedClarifiedPrompts: []
+        }`;
+    } else {
+        addMessage(message, 'user'); // Add user's text message (even if empty, for image context)
+        userInput.value = '';
+        userInput.style.height = '40px';
+    }
     try {
         let response;
         let chatOptions = { model: selectedModel };
@@ -142,7 +168,11 @@ async function sendMessage() {
         if (!response) {
             showFeedback('no response!');
         } else {
-            addMessage(response, 'ai');
+            if (isClarify) {
+                return response; // Return the response for modal display
+            } else {
+                addMessage(response, 'ai');
+            }
             // 
             // Clear image immediately after adding user message
             if (selectedImageURL) {
@@ -160,7 +190,7 @@ async function sendMessage() {
             addMessage("usage-limited-chat");
         }
         console.log(error);
-}
+    }
 }
 
 
@@ -399,9 +429,106 @@ document.addEventListener('paste', function (event) {
 
 
 
+/* modal logic */
+// Example: When user clicks 'Clarify', this simulates an output. Replace with your real logic.
+document.getElementById('clarify-button').addEventListener('click', async function () {
+    // Simulate getting an output (replace this with call to clarify or Puter API etc)
+    let clarifyOutput = await sendMessage(true); // Call sendMessage with isClarify = true
+    if (clarifyOutput) showClarifyModal(clarifyOutput);
+});
+
+/*
+
+*/
+
+// JS function to update textarea
+function updateOriginalPrompt(newPrompt) {
+    const textarea = document.getElementById('user-input');
+    if (textarea) {
+        textarea.value = newPrompt;
+        textarea.focus();
+        document.getElementById('clarify-modal').style.display = 'none';
+        autoResizeTextarea(); // Adjust height after updating
+    } else {
+        console.warn("Textarea with id 'user-input' not found.");
+    }
+}
+
+function showClarifyModal(response) {
+    let content = response.message.content[0].text || response.message.content;
+    content = JSON.parse(content.replace("```json", "").replace("```", ""));
+
+    console.log(content)
+    const htmlContent = `<!-- Formatted Clarification Modal Content -->
+<div class="clarify-modal-section">
+  <h3>Prompt Analysis: <code>${content.originalPrompt}</code></h3>
+
+  <!-- Ambiguity Rating -->
+  <div class="clarify-modal-block">
+    <strong>Ambiguity Rating:</strong>
+    <span class="clarify-rating">${content.ambiguityRating}</span>
+  </div>
+
+  <!-- Ambiguity Dimensions Table -->
+  <div class="clarify-modal-block">
+    <strong>Ambiguity Dimensions:</strong>
+    <div class="clarify-table-scroll">
+      <table class="clarify-modal-table">
+        <thead>
+          <tr>
+            <th>Dimension Name</th>
+            <th>Impact Level</th>
+            <th>Specific Ambiguous Aspects</th>
+            <th>Possible Interpretations</th>
+          </tr>
+        </thead>
+        <tbody>
+        ${content.analysisTable.map(dimension => `
+          <tr>
+            <td>${dimension.dimensionName}</td>
+            <td><span class="${dimension.impactLevel.toLowerCase()}">${dimension.impactLevel}</span></td>
+            <td>${dimension.specificAmbiguousAspects}</td>
+            <td>${dimension.possibleInterpretations}</td>
+          </tr>
+        `).join('')}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Suggested Clarified Prompts -->
+  <div class="clarify-modal-block">
+    <strong>Suggested Clarified Prompts:</strong>
+    <div>
+      ${content.suggestedClarifiedPrompts.map((prompt, index) => `
+        <div class="clarify-modal-codebox">
+          <code>${prompt}</code>
+          <button onclick="updateOriginalPrompt(\`${prompt.replace(/`/g, '\\`')}\`)" style="margin-top:8px; display:block;">Select</button>
+        </div>
+      `).join('')}
+    </div>
+  </div>
+</div>
+`
+
+    document.getElementById('clarify-modal-output').innerHTML = htmlContent;
+    document.getElementById('clarify-modal').style.display = 'block';
+}
+
+// Close modal handlers
+document.getElementById('modal-close-btn').onclick = function () {
+    document.getElementById('clarify-modal').style.display = 'none';
+};
+
+
+
+/* modal logic */
+
 
 saveButton.addEventListener('click', saveChatAsWord);
 copyAllButton.addEventListener('click', copyAllMessages);
+
+
 
 // Initial message from AI
 addMessage("Hello! I'm your interactive AI. How can I help you today?", 'ai');

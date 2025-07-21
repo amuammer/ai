@@ -9,16 +9,12 @@
 
 <body>
     <div id="chat-container">
-        <h2>Puter AI Interactive Chat</h2>
         <div id="model-selection">
-            <input type="radio" id="o4-mini" name="ai-model" value="o4-mini">
-            <label for="o4-mini">o4-mini</label>
-
-            <input type="radio" id="gpt-4.1" name="ai-model" value="gpt-4.1">
+            <input checked type="radio" id="gpt-4.1" name="ai-model" value="gpt-4.1">
             <label for="gpt-4.1">gpt-4.1</label>
 
-            <input type="radio" id="gpt-4.5-preview" name="ai-model" value="gpt-4.5-preview">
-            <label for="gpt-4.5-preview">gpt-4.5-preview</label>
+            <input type="radio" id="o4-mini" name="ai-model" value="o4-mini">
+            <label for="o4-mini">o4-mini</label>
 
             <input type="radio" id="claude-sonnet-4" name="ai-model" value="claude-sonnet-4">
             <label for="claude-sonnet-4">claude-sonnet-4</label>
@@ -41,21 +37,9 @@
             <input type="radio" id="gemini-2.0-flash" name="ai-model" value="gemini-2.0-flash">
             <label for="gemini-2.0-flash">gemini-2.0-flash</label>
 
-            <input type="radio" id="llama-3.1-405B" name="ai-model"
-                value="meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo">
-            <label for="llama-3.1-405B">meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo</label>
+            <input type="radio" id="gemini-2.5-pro" name="ai-model" value="openrouter:google/gemini-2.5-pro">
+            <label for="gemini-2.5-pro">gemini-2.5-pro</label>
 
-            <input type="radio" id="mistral-large-latest" name="ai-model" value="mistral-large-latest">
-            <label for="mistral-large-latest">mistral-large-latest</label>
-
-            <input type="radio" id="pixtral-large-latest" name="ai-model" value="pixtral-large-latest">
-            <label for="pixtral-large-latest">pixtral-large-latest</label>
-
-            <input type="radio" id="codestral-latest" name="ai-model" value="codestral-latest">
-            <label for="codestral-latest">codestral-latest</label>
-
-            <input type="radio" id="gemma-2-27b-it" name="ai-model" value="google/gemma-2-27b-it">
-            <label for="gemma-2-27b-it">google/gemma-2-27b-it</label>
 
             <input type="radio" id="grok-beta" name="ai-model" value="grok-beta">
             <label for="grok-beta">grok-beta</label>
@@ -66,12 +50,21 @@
             <textarea id="user-input" placeholder="Ask me anything..." rows="1"></textarea>
             <input type="file" id="image-upload" accept="image/*">
             <button id="send-button">Send</button>
+            <button id="clarify-button">Clarify</button>
             <button id="save-button">Save Chat</button>
             <button id="copy-all-button">Copy All</button>
         </div>
         <img id="image-preview" src="" alt="Image Preview" style="display: none;">
 
         <div id="feedback-message"></div>
+        <!-- Popup Modal HTML -->
+        <div id="clarify-modal" class="modal">
+            <div class="modal-content">
+                <span class="modal-close" id="modal-close-btn">&times;</span>
+                <div id="clarify-modal-output"></div>
+            </div>
+        </div>
+
         <script src="script.js"></script>
 
     </div>
