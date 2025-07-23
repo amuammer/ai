@@ -1,0 +1,34 @@
+[
+  {
+    "id": "EX_01",
+    "domain": "Content Creation",
+    "original_prompt": "Write an article about AI.",
+    "baseline_response": "**The Dawn of Intelligence: A History of AI**\n\nArtificial Intelligence (AI) has its roots in the mid-20th century, with pioneers like Alan Turing asking if machines could think. Early research focused on problem-solving and symbolic methods. The field saw booms and busts, known as \"AI winters,\" but has re-emerged stronger than ever with the advent of machine learning and deep learning...",
+    "followup_prompt": "No, I need an article with technical details about how modern transformer models work, including self-attention mechanisms.",
+    "analyzer_response": "{\"originalPrompt\": \"Write an article about AI.\", \"ambiguityRating\": 80, \"analysisTable\": [{\"Dimension Name\": \"Article Focus/Audience\", \"Impact Level\": \"Critical\", \"Ambiguous Aspects\": \"The specific topic (e.g., history, ethics, technical details) and target audience are not specified.\", \"Possible Interpretations\": \"A historical overview, a technical paper, an opinion piece.\"}], \"suggestedClarifiedPrompts\": [\"Write a technical article explaining the architecture of transformer models for an engineering audience...\"]}"
+  },
+  {
+    "id": "EX_02",
+    "domain": "Code Generation",
+    "original_prompt": "Please write a script.",
+    "baseline_response": "Sure, here is a Python script that reads a CSV file named 'data.csv' and prints its contents. Python is a popular choice for scripting.\n\n```python\nimport csv\n\nwith open('data.csv', mode='r') as file:\n    csv_reader = csv.reader(file)\n    for row in csv_reader:\n        print(', '.join(row))\n```",
+    "followup_prompt": "This should have been a bash script to find all files ending in .log in the current directory and its subdirectories, and then zip them into an archive named 'logs.zip'.",
+    "analyzer_response": "{\"originalPrompt\": \"Please write a script.\", \"ambiguityRating\": 98, \"analysisTable\": [{\"Dimension Name\": \"Scripting Language & Goal\", \"Impact Level\": \"Critical\", \"Ambiguous Aspects\": \"The scripting language (e.g., Python, Bash, PowerShell) and the specific task the script should perform are completely undefined.\", \"Possible Interpretations\": \"A data processing script, a file management script, a web scraper.\"}], \"suggestedClarifiedPrompts\": [\"Write a Bash script to find and delete all temporary files...\"]}"
+  },
+  {
+    "id": "EX_03",
+    "domain": "Business Communication",
+    "original_prompt": "Write an email to the team.",
+    "baseline_response": "**Subject: Upcoming Deadline**\n\nHi Team,\n\nThis is a reminder that the deadline for the Q3 project submission is this Friday. Please ensure all your tasks are completed and submitted on time. Let's push hard to meet this goal.\n\nThanks,\nA.M.",
+    "followup_prompt": "No, I needed an email with some encouragement for the team to boost morale after a tough week, not a message about deadlines.",
+    "analyzer_response": "{\"originalPrompt\": \"Write an email to the team.\", \"ambiguityRating\": 95, \"analysisTable\": [{\"Dimension Name\": \"Email Goal/Tone\", \"Impact Level\": \"Critical\", \"Ambiguous Aspects\": \"The purpose of the email (e.g., update, announcement, motivation) and the desired tone are not specified.\", \"Possible Interpretations\": \"A task reminder, a meeting invitation, a motivational message.\"}], \"suggestedClarifiedPrompts\": [\"Write a motivational email to the team to thank them for their hard work on the recent project...\"]}"
+  },
+  {
+    "id": "QA_01",
+    "domain": "Question Answering",
+    "original_prompt": "Who is the CEO?",
+    "baseline_response": "The CEO is Satya Nadella, the Chief Executive Officer of Microsoft. He took on the role in 2014.",
+    "followup_prompt": "Sorry, I meant the CEO of OpenAI.",
+    "analyzer_response": "{\"originalPrompt\": \"Who is the CEO?\", \"ambiguityRating\": 90, \"analysisTable\": [{\"Dimension Name\": \"Entity Scope\", \"Impact Level\": \"Critical\", \"Ambiguous Aspects\": \"The specific company or organization is not mentioned.\", \"Possible Interpretations\": \"CEO of Microsoft, Google, Apple, etc.\"}], \"suggestedClarifiedPrompts\": [\"Who is the CEO of Google?\", \"Who is the CEO of Tesla?\"]}"
+  }
+]
