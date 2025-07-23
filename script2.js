@@ -124,12 +124,36 @@ async function sendMessage(isClarify = false) {
     }
 
     // If isClarify is true, we want to return the response for modal display
-    if (isClarify) { 
-         promptText = `Analyze the ambiguity of this prompt: "${promptText}"
-                 Return in JSON:
-                 - ambiguityRating (0-100)
-                 - analysisTable: [ { impactLevel, dimensionName, possibleAssumptions(two assumed values)} ]
-                 - suggestedClarifiedPrompt: clarified prompt assumptions for the missing parameters`
+    if (isClarify) {
+        promptText = `Analyze the ambiguity of this prompt: "${promptText}"
+        Provide:
+        1. An ambiguity rating (0-100 scale, where 0 = perfectly clear, 100 = completely ambiguous)
+        2. A structured table showing all ambiguous dimensions with the following columns:
+        - Dimension name
+        - Impact level (Critical/High/Medium/Low)
+        - Specific ambiguous aspects
+        - Possible interpretations
+        3. Three diverse, Suggested Clarified Prompts: Provide three revised versions of the original prompt. Each version should explore a different likely user intent by making different reasonable assumptions for the missing parameters.
+        --
+        Requirements:
+        - Preserve original intent
+        - Add specific reasonable assumption for missing parameters
+        - Keep the tone consistent
+        - Group dimensions by impact level
+        - Plz structure your answer in below json format
+        { 
+            originalPrompt,
+            ambiguityRating,
+            analysisTable: [
+                {
+                    dimensionName,
+                    impactLevel,
+                    specificAmbiguousAspects,
+                    possibleInterpretations
+                }
+            ],
+            suggestedClarifiedPrompts: []
+        }`;
     } else {
         addMessage(message, 'user'); // Add user's text message (even if empty, for image context)
         userInput.value = '';
@@ -438,12 +462,11 @@ function updateOriginalPrompt(newPrompt) {
 function showClarifyModal(response) {
     let content = response.message.content[0].text || response.message.content;
     content = JSON.parse(content.replace("```json", "").replace("```", ""));
-    const textarea = document.getElementById('user-input');
 
     console.log(content)
     const htmlContent = `<!-- Formatted Clarification Modal Content -->
 <div class="clarify-modal-section">
-  <h3>Prompt Analysis: <code>${textarea.value}</code></h3>
+  <h3>Prompt Analysis: <code>${content.originalPrompt}</code></h3>
 
   <!-- Ambiguity Rating -->
   <div class="clarify-modal-block">
@@ -458,17 +481,19 @@ function showClarifyModal(response) {
       <table class="clarify-modal-table">
         <thead>
           <tr>
-            <th class="impact-level">Impact Level</th>
             <th>Dimension Name</th>
-            <th>Two Possible Assumptions</th>
+            <th class="impact-level">Impact Level</th>
+            <th>Specific Ambiguous Aspects</th>
+            <th>Possible Interpretations</th>
           </tr>
         </thead>
         <tbody>
         ${content.analysisTable.map(dimension => `
           <tr>
+            <td>${dimension.dimensionName}</td>
             <td><span class="${dimension.impactLevel.toLowerCase()}">${dimension.impactLevel}</span></td>
-          <td>${dimension.dimensionName}</td>
-            <td>${dimension.possibleAssumptions}</td>
+            <td>${dimension.specificAmbiguousAspects}</td>
+            <td>${dimension.possibleInterpretations}</td>
           </tr>
         `).join('')}
         </tbody>
@@ -476,14 +501,16 @@ function showClarifyModal(response) {
     </div>
   </div>
 
-  <!-- Suggested Clarified Prompt -->
+  <!-- Suggested Clarified Prompts -->
   <div class="clarify-modal-block">
-    <strong>Suggested Clarified Prompt:</strong>
+    <strong>Suggested Clarified Prompts:</strong>
     <div>
-      <div class="clarify-modal-codebox">
-        <code>${content.suggestedClarifiedPrompt}</code>
-        <button onclick="updateOriginalPrompt(\`${content.suggestedClarifiedPrompt.replace(/`/g, '\\`')}\`)" style="margin-top:8px; display:block;">Copy</button>
-      </div>
+      ${content.suggestedClarifiedPrompts.map((prompt, index) => `
+        <div class="clarify-modal-codebox">
+          <code>${prompt}</code>
+          <button onclick="updateOriginalPrompt(\`${prompt.replace(/`/g, '\\`')}\`)" style="margin-top:8px; display:block;">Select</button>
+        </div>
+      `).join('')}
     </div>
   </div>
 </div>

@@ -63,7 +63,8 @@
     "index": 11,
     "field": "#Code Generation           ",
     "prompt": " Write a function for sorting.",
-    "response": "Sure, here is an example of a function for sorting an array of numbers in ascending order using the bubble sort algorithm:\n\n```python\ndef bubble_sort(arr):\n    n = len(arr)\n    for i in range(n):\n        for j in range(0, n-i-1):\n            if arr[j] > arr[j+1]:\n                arr[j], arr[j+1] = arr[j+1], arr[j]\n    return arr\n\n# Example usage\narr = [64, 34, 25, 12, 22, 11, 90]\nsorted_arr = bubble_sort(arr)\nprint(sorted_arr)\n```\n\nThis function sorts the input array `arr` by repeatedly swapping adjacent elements if they are in the wrong order until the array is sorted. The sorted array is then returned as the result."
+    "response": "Sure, here is an example of a function for sorting an array of numbers in ascending order using the bubble sort algorithm:\n\n```python\ndef bubble_sort(arr):\n    n = len(arr)\n    for i in range(n):\n        for j in range(0, n-i-1):\n            if arr[j] > arr[j+1]:\n                arr[j], arr[j+1] = arr[j+1], arr[j]\n    return arr\n\n# Example usage\narr = [64, 34, 25, 12, 22, 11, 90]\nsorted_arr = bubble_sort(arr)\nprint(sorted_arr)\n```\n\nThis function sorts the input array `arr` by repeatedly swapping adjacent elements if they are in the wrong order until the array is sorted. The sorted array is then returned as the result.",
+    "followup_prompt": "please use javascript and make the sort descending and datatype is string"
   },
   {
     "index": 12,

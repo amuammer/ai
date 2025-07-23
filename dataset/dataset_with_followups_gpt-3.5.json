@@ -4,699 +4,699 @@
     "field": "Business Communication    ",
     "prompt": " Can you prepare a summary for the meeting?",
     "response": "Of course! Here is a summary of the meeting:\n\nDuring the meeting, the team discussed the progress on current projects, identified key challenges, and brainstormed solutions. Important decisions were made regarding project timelines and resource allocation. Action items were assigned to specific team members with deadlines to ensure accountability. Overall, the meeting was productive and resulted in a clear plan of action moving forward.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"Of course! Here is a summary of the meeting:\n\nDuring the meeting, the team discussed the progress on...\""
+    "followup_prompt": "Can you highlight the key decisions made and the action items assigned to each team member?"
   },
   {
     "index": 2,
     "field": "Business Communication    ",
     "prompt": " Send the report to everyone by tomorrow.",
     "response": "I will send the report to everyone by tomorrow. Thank you for your request.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"I will send the report to everyone by tomorrow. Thank you for your request....\""
+    "followup_prompt": "Please send it as a PDF and also cc the management team."
   },
   {
     "index": 3,
     "field": "Business Communication    ",
     "prompt": " Write an email about the latest update.",
     "response": "Subject: Exciting News! The Latest Update is Here!\n\nDear Team,\n\nI am thrilled to announce that the latest update has been successfully rolled out and is now available for everyone to use. This update includes several new features, improvements to existing ones, and bug fixes to enhance the overall user experience.\n\nSome of the key highlights of this update include:\n\n- A new streamlined user interface that makes navigating through the app much easier and more intuitive.\n- Improved performance and faster load times for quicker access to all features.\n- New customization options that allow users to personalize their experience even further.\n- Enhancements to security and data protection measures to ensure the safety of all user information.\n\nWe believe that this update will greatly benefit our users and provide them with an even better experience while using our product. We are always looking for ways to improve and innovate, and this update is a testament to that commitment.\n\nPlease make sure to update your app to enjoy all the new features and improvements. If you have any questions or feedback, please do not hesitate to reach out to us.\n\nThank you for your continued support and dedication to our product. We couldn't have done it without all of you!\n\nBest regards,\n[Your Name]",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"Subject: Exciting News! The Latest Update is Here!\n\nDear Team,\n\nI am thrilled to announce that the l...\""
+    "followup_prompt": "Can you create a shorter version of this update for our social media channels?"
   },
   {
     "index": 4,
     "field": "#Business Communication    ",
     "prompt": " Schedule a call with the team.",
     "response": "Sure, I can definitely help with that. Please provide me with the following information:\n\n1. Date and time you would like to schedule the call\n2. Duration of the call\n3. Preferred platform for the call (e.g. Zoom, Google Meet, Microsoft Teams)\n4. Agenda or topics to be discussed during the call\n\nOnce I have this information, I will coordinate with the team members and send out a meeting invitation.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"Sure, I can definitely help with that. Please provide me with the following information:\n\n1. Date an...\""
+    "followup_prompt": "Let's schedule it for next Tuesday at 10 AM for 30 minutes using Google Meet. The agenda is to discuss the Q3 roadmap."
   },
   {
     "index": 5,
     "field": "#Business Communication    ",
     "prompt": " Let me know the outcome of the discussion.",
     "response": "I am an AI and do not have the ability to eavesdrop on discussions. But if you provide me with more context, I may be able to provide insights or guidance based on the information you provide.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"I am an AI and do not have the ability to eavesdrop on discussions. But if you provide me with more ...\""
+    "followup_prompt": "The discussion was about the marketing budget. The key points were a 10% increase in digital ads and a 5% decrease in print. What are the potential impacts?"
   },
   {
     "index": 6,
     "field": "#Business Communication    ",
     "prompt": " Share the presentation with the stakeholders.",
     "response": "Subject: Stakeholder Presentation - Company Update\n\nDear Stakeholders,\n\nI hope this message finds you well. I am writing to inform you that we have prepared a presentation to provide you with an update on the company's progress, performance, and future outlook.\n\nThe presentation covers key areas such as financial performance, operational updates, market trends, and strategic initiatives. We believe it is important for you to stay informed about our progress and developments as stakeholders in the company.\n\nPlease find the attached presentation for your review. We welcome any feedback or questions you may have and are happy to schedule a follow-up meeting to discuss further.\n\nThank you for your continued support and partnership.\n\nBest regards,\n\n[Your Name]\n[Your Position]\n[Company Name]",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"Subject: Stakeholder Presentation - Company Update\n\nDear Stakeholders,\n\nI hope this message finds yo...\""
+    "followup_prompt": "Could you make the tone of the email more informal and direct?"
   },
   {
     "index": 7,
     "field": "#Business Communication    ",
     "prompt": " Remind me about the important deadlines.",
     "response": "It would be helpful if you could specify which deadlines you are referring to.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"It would be helpful if you could specify which deadlines you are referring to....\""
+    "followup_prompt": "I'm referring to the Project Phoenix deadlines for Q3."
   },
   {
     "index": 8,
     "field": "#Business Communication    ",
     "prompt": " Organize a follow-up session next week.",
     "response": "Dear Team,\n\nI hope everyone is doing well. Following our previous meeting, I would like to schedule a follow-up session next week to discuss our progress and next steps. \n\nPlease let me know your availability for next week so we can find a suitable date and time for the meeting. Your input and feedback are valuable as we move forward with our project.\n\nI look forward to catching up and continuing our work together. Thank you for your dedication and hard work.\n\nBest regards,\n[Your Name]",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"Dear Team,\n\nI hope everyone is doing well. Following our previous meeting, I would like to schedule ...\""
+    "followup_prompt": "Please use a scheduling poll like Doodle to find the best time for everyone."
   },
   {
     "index": 9,
     "field": "#Business Communication    ",
     "prompt": " Please respond to the client’s concerns.",
     "response": "Of course, I understand your concerns and I want to assure you that I am here to address any issues you may have. Please let me know what specific concerns you have so that I can provide you with a solution or further information. Your satisfaction is important to me, and I am committed to helping in any way that I can.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"Of course, I understand your concerns and I want to assure you that I am here to address any issues ...\""
+    "followup_prompt": "The client is concerned about the delivery delay and the lack of communication. Please draft a response addressing these two points."
   },
   {
     "index": 10,
     "field": "#Business Communication    ",
     "prompt": " Put together the agenda for the event.",
     "response": "Event Agenda:\n\n1. Welcome and Introduction\n- Opening remarks by the host or main organizer\n- Introduction of the event theme and purpose\n\n2. Keynote Speaker Presentation\n- Presentation by a keynote speaker on the topic related to the event theme\n\n3. Panel Discussion\n- Panel discussion featuring experts and industry leaders discussing current trends and issues in the field\n\n4. Networking Break\n- Opportunity for attendees to network, exchange ideas, and build connections with other participants\n\n5. Workshop Sessions\n- Breakout sessions or workshops covering specific topics, led by subject matter experts\n\n6. Lunch Break\n- Time for attendees to enjoy lunch and continue networking\n\n7. Interactive Activities\n- Engaging activities or hands-on exercises related to the event theme\n\n8. Closing Remarks\n- Summary of key takeaways from the event\n- Thanking speakers, sponsors, and attendees for their participation\n\n9. Networking Reception\n- Informal networking reception with refreshments to allow attendees to continue networking and socializing\n\n10. End of Event",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"Event Agenda:\n\n1. Welcome and Introduction\n- Opening remarks by the host or main organizer\n- Introdu...\""
+    "followup_prompt": "Can you add specific time slots for each agenda item, assuming the event runs from 9 AM to 5 PM?"
   },
   {
     "index": 11,
     "field": "#Code Generation           ",
     "prompt": " Write a function for sorting.",
     "response": "Sure, here is an example of a function for sorting an array of numbers in ascending order using the bubble sort algorithm:\n\n```python\ndef bubble_sort(arr):\n    n = len(arr)\n    for i in range(n):\n        for j in range(0, n-i-1):\n            if arr[j] > arr[j+1]:\n                arr[j], arr[j+1] = arr[j+1], arr[j]\n    return arr\n\n# Example usage\narr = [64, 34, 25, 12, 22, 11, 90]\nsorted_arr = bubble_sort(arr)\nprint(sorted_arr)\n```\n\nThis function sorts the input array `arr` by repeatedly swapping adjacent elements if they are in the wrong order until the array is sorted. The sorted array is then returned as the result.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"Sure, here is an example of a function for sorting an array of numbers in ascending order using the ...\""
+    "followup_prompt": "please use javascript and make the sort descending and datatype is string"
   },
   {
     "index": 12,
     "field": "#Code Generation           ",
     "prompt": " Generate code to handle user input.",
     "response": "Here is an example of code in Python to handle user input:\n\n```python\n# Take user input\nuser_input = input(\"Enter your name: \")\n\n# Print the user input\nprint(\"Hello, \" + user_input + \"!\")\n```\n\nIn this code snippet, the `input()` function is used to take user input and store it in the `user_input` variable. This input is then printed back to the user using the `print()` function.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"Here is an example of code in Python to handle user input:\n\n```python\n# Take user input\nuser_input =...\""
+    "followup_prompt": "How can I add validation to ensure the user enters a non-empty string?"
   },
   {
     "index": 13,
     "field": "#Code Generation           ",
     "prompt": " Fix the bug in the following code.",
     "response": "```python\ndef add_numbers(a, b):\n    sum = a + b\n    return sum\n``` \n\nIn the code provided, there isn't any bug to fix. The function `add_numbers` takes two parameters `a` and `b`, adds them together, and returns the result.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"```python\ndef add_numbers(a, b):\n    sum = a + b\n    return sum\n``` \n\nIn the code provided, there is...\""
+    "followup_prompt": "My apologies, here is the buggy code: `def add_numbers(a, b): sum = a - b return sum`"
   },
   {
     "index": 14,
     "field": "#Code Generation           ",
     "prompt": " Update the configuration file as needed.",
     "response": "I'm sorry, but I can't update the configuration file as I don't have access to your system. If you provide me with the changes you would like to make, I can help guide you on how to update the configuration file on your own.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"I'm sorry, but I can't update the configuration file as I don't have access to your system. If you p...\""
+    "followup_prompt": "Here is the content of the config file. Please change the 'debug' value from 'true' to 'false'."
   },
   {
     "index": 15,
     "field": "#Code Generation           ",
     "prompt": " Implement a class for processing data.",
     "response": "```python\nclass DataProcessor:\n    def __init__(self, data):\n        self.data = data\n        \n    def process_data(self):\n        # Implement data processing logic here\n        processed_data = [x**2 for x in self.data]\n        return processed_data\n```\n\nThis is a simple example of a class that processes data by squaring each element in the input data. You can modify the `process_data` method to perform any data processing operation you need.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"```python\nclass DataProcessor:\n    def __init__(self, data):\n        self.data = data\n        \n    d...\""
+    "followup_prompt": "Can you add a method to filter out numbers less than 10 before processing?"
   },
   {
     "index": 16,
     "field": "#Code Generation           ",
     "prompt": " Refactor the main method.",
     "response": "public class Main {\n\n    public static void main(String[] args) {\n        startApp();\n    }\n\n    public static void startApp() {\n        // Code for starting the application\n        System.out.println(\"Application started\");\n    }\n}",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"public class Main {\n\n    public static void main(String[] args) {\n        startApp();\n    }\n\n    pub...\""
+    "followup_prompt": "Can you explain why this refactored version is better than putting all the code in the main method?"
   },
   {
     "index": 17,
     "field": "#Code Generation           ",
     "prompt": " Create a script to automate the process.",
     "response": "# Import necessary libraries\nimport os\nimport shutil\n\n# Define source and destination directories\nsource_dir = 'path/to/source/directory'\ndestination_dir = 'path/to/destination/directory'\n\n# Get list of files in source directory\nfile_list = os.listdir(source_dir)\n\n# Move files to destination directory\nfor file_name in file_list:\n    source_file = os.path.join(source_dir, file_name)\n    destination_file = os.path.join(destination_dir, file_name)\n    shutil.move(source_file, destination_file)\n\nprint('Files have been successfully moved to destination directory.')",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"# Import necessary libraries\nimport os\nimport shutil\n\n# Define source and destination directories\nso...\""
+    "followup_prompt": "How can I add error handling in case the destination directory does not exist?"
   },
   {
     "index": 18,
     "field": "#Code Generation           ",
     "prompt": " Add logging to the application.",
     "response": "To add logging to the application, you can use a logging framework like Log4j or SLF4J. Here is an example of how to add logging using Log4j:\n\n1. Add Log4j dependencies to your project (if using Maven):\n\n```xml\n<dependency>\n    <groupId>org.apache.logging.log4j</groupId>\n    <artifactId>log4j-api</artifactId>\n    <version>2.14.0</version>\n</dependency>\n\n<dependency>\n    <groupId>org.apache.logging.log4j</groupId>\n    <artifactId>log4j-core</artifactId>\n    <version>2.14.0</version>\n</dependency>\n```\n\n2. Create a log4j2.xml configuration file in your resources directory:\n\n```xml\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Configuration status=\"WARN\">\n    <Appenders>\n        <Console name=\"Console\" target=\"SYSTEM_OUT\">\n            <PatternLayout pattern=\"%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n\"/>\n        </Console>\n        <File name=\"File\" fileName=\"logs/application.log\">\n            <PatternLayout pattern=\"%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n\"/>\n        </File>\n    </Appenders>\n    <Loggers>\n        <Root level=\"debug\">\n            <AppenderRef ref=\"Console\"/>\n            <AppenderRef ref=\"File\"/>\n        </Root>\n    </Loggers>\n</Configuration>\n```\n\n3. In your Java code, use the logger to log messages:\n\n```java\nimport org.apache.logging.log4j.LogManager;\nimport org.apache.logging.log4j.Logger;\n\npublic class MyClass {\n    private static final Logger logger = LogManager.getLogger(MyClass.class);\n\n    public void doSomething() {\n        logger.debug(\"Debug message\");\n        logger.info(\"Info message\");\n        logger.warn(\"Warning message\");\n        logger.error(\"Error message\");\n    }\n}\n```\n\nNow, when you run your application, log messages will be written to both the console and a file called `application.log` in the `logs` directory. You can customize the log levels and formatting in the log4j2.xml configuration file to suit your needs.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"To add logging to the application, you can use a logging framework like Log4j or SLF4J. Here is an e...\""
+    "followup_prompt": "Is there a simpler way to do this using Python's built-in logging library?"
   },
   {
     "index": 19,
     "field": "#Code Generation           ",
     "prompt": " Optimize the function for performance.",
     "response": "To optimize a function for performance, you can consider the following techniques:\n\n1. Minimize unnecessary operations: Review the function code and remove any unnecessary operations or redundant code that do not contribute to the function's output.\n\n2. Use data structures efficiently: Choose the appropriate data structures such as arrays, sets, or maps to efficiently store and manipulate data in the function.\n\n3. Avoid unnecessary memory allocations: Minimize memory allocations within the function by reusing variables or allocating memory only when necessary.\n\n4. Use built-in functions: Utilize built-in functions or libraries for common tasks to improve performance and reduce the need for custom implementations.\n\n5. Optimize loops: Make sure that loops in the function are as efficient as possible by minimizing the number of iterations and avoiding unnecessary calculations within the loop.\n\n6. Consider algorithmic improvements: Review the algorithm used in the function and consider whether there are more efficient algorithms that could be implemented to achieve the same result.\n\n7. Profile and benchmark: Use performance profiling tools to identify bottlenecks in the function and measure the performance improvements after making optimizations.\n\nBy applying these techniques, you can optimize the function for improved performance.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"To optimize a function for performance, you can consider the following techniques:\n\n1. Minimize unne...\""
+    "followup_prompt": "Can you apply these techniques to optimize a specific function for finding the sum of all even numbers in a large list?"
   },
   {
     "index": 20,
     "field": "#Code Generation           ",
     "prompt": " Make the program more robust.",
     "response": "To make the program more robust, we can add error handling and validation to handle possible issues that may arise. Here are some suggestions on how to improve the program:\n\n1. Input validation: Check for valid user inputs such as ensuring that the user enters a valid number within a certain range and handle invalid inputs gracefully.\n\n2. Error handling: Use try-except blocks to catch any errors that may occur during execution, such as division by zero or invalid operations.\n\n3. Exception handling: Handle exceptions that may occur and provide meaningful error messages to the user. This can help prevent the program from crashing unexpectedly.\n\n4. Use defensive programming techniques: Add checks and validations throughout the code to anticipate and handle unexpected situations, such as checking for null values or empty lists before performing operations.\n\n5. Logging: Implement logging mechanisms to record any errors or information that can help identify issues in the program.\n\nBy implementing these strategies, we can make the program more robust and ensure that it can handle a wider range of scenarios without crashing or producing unexpected errors.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"To make the program more robust, we can add error handling and validation to handle possible issues ...\""
+    "followup_prompt": "Can you show me how to implement input validation for a function that expects a positive integer?"
   },
   {
     "index": 21,
     "field": "#Data Analysis             ",
     "prompt": " Create a chart for the sales data.",
     "response": "Sure! Here is a chart showing the sales data for the past month:\n\n| Date  | Sales Amount |\n|-------|--------------|\n| 1/1   | $500         |\n| 1/2   | $600         |\n| 1/3   | $700         |\n| 1/4   | $800         |\n| 1/5   | $900         |\n| 1/6   | $1000        |\n| 1/7   | $1100        |\n| 1/8   | $1200        |\n| 1/9   | $1300        |\n| 1/10  | $1400        |\n| 1/11  | $1500        |\n| 1/12  | $1600        |\n| 1/13  | $1700        |\n| 1/14  | $1800        |\n| 1/15  | $1900        |\n| 1/16  | $2000        |\n| 1/17  | $2100        |\n| 1/18  | $2200        |\n| 1/19  | $2300        |\n| 1/20  | $2400        |\n| 1/21  | $2500        |\n| 1/22  | $2600        |\n| 1/23  | $2700        |\n| 1/24  | $2800        |\n| 1/25  | $2900        |\n| 1/26  | $3000        |\n| 1/27  | $3100        |\n| 1/28  | $3200        |\n| 1/29  | $3300        |\n| 1/30  | $3400        |\n| 1/31  | $3500        | \n\nI hope this chart helps visualize the sales data for the month.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"Sure! Here is a chart showing the sales data for the past month:\n\n| Date  | Sales Amount |\n|-------|...\""
+    "followup_prompt": "Can you generate Python code using Matplotlib to create a line chart from this data?"
   },
   {
     "index": 22,
     "field": "#Data Analysis             ",
     "prompt": " Analyze the survey results.",
     "response": "To analyze survey results, it is important to first identify the key findings and trends from the data collected. This involves looking at the responses to each question, identifying any patterns or outliers, and drawing conclusions based on the data.\n\nSome key aspects to consider when analyzing survey results include:\n\n1. Response rate: It is important to consider the response rate of the survey to ensure that the results are representative of the population being surveyed. A low response rate may skew the results and lead to inaccurate conclusions.\n\n2. Demographic information: Analyzing survey results by demographic factors such as age, gender, location, etc. can provide valuable insights into how different groups perceive the topic being surveyed.\n\n3. Key findings: Identify the main takeaways from the survey results, including any trends, patterns, or interesting findings that emerge from the data.\n\n4. Comparison to previous data: If available, compare the survey results to previous data or benchmarks to see if there have been any changes over time.\n\n5. Recommendations: Based on the survey results, make recommendations for future actions or strategies that can be implemented to address any issues or capitalize on opportunities identified in the survey.\n\nOverall, analyzing survey results involves careful examination of the data collected to draw meaningful conclusions and make informed decisions based on the findings.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"To analyze survey results, it is important to first identify the key findings and trends from the da...\""
+    "followup_prompt": "Here are the results from our latest customer satisfaction survey. Can you identify the key findings?"
   },
   {
     "index": 23,
     "field": "#Data Analysis             ",
     "prompt": " Prepare a dashboard for the metrics.",
     "response": "Title: Metrics Dashboard\n\n1. Revenue\n- Total Revenue: $XXX,XXX\n- Monthly Revenue Growth: X%\n- Yearly Revenue Growth: X%\n\n2. Customer Acquisition\n- Total New Customers: XXX\n- Customer Acquisition Cost (CAC): $XXX\n- Customer Lifetime Value (CLV): $XXX\n\n3. Customer Retention\n- Customer Churn Rate: X%\n- Customer Retention Rate: X%\n- Average Customer Lifetime: X months\n\n4. Website Traffic\n- Total Website Visits: XXXX\n- Average Session Duration: X minutes\n- Bounce Rate: X%\n\n5. Conversion Rate\n- Overall Conversion Rate: X%\n- Conversion Rate by Channel:\n  - Organic Search: X%\n  - Paid Search: X%\n  - Social Media: X%\n  - Email Marketing: X%\n\n6. Sales Performance\n- Total Sales: XXX\n- Average Order Value: $XXX\n- Sales by Product Category:\n  - Category A: $XXX\n  - Category B: $XXX\n  - Category C: $XXX\n\n7. Marketing ROI\n- Return on Ad Spend (ROAS): X%\n- Marketing Cost as a Percentage of Revenue: X%\n- Customer Acquisition Cost (CAC) vs. Customer Lifetime Value (CLV): X%\n\n8. Customer Satisfaction\n- Net Promoter Score (NPS): X\n- Customer Satisfaction Score (CSAT): X\n- Customer Feedback: Positive/Negative/Neutral\n\n9. Employee Engagement\n- Employee Satisfaction Score: X\n- Employee Retention Rate: X%\n- Employee Turnover Rate: X%\n\n10. Financial Health\n- Gross Profit Margin: X%\n- Operating Income: $XXX\n- Cash Flow: $XXX\n\nThis dashboard provides a comprehensive overview of key metrics across various aspects of the business, allowing for easy monitoring and analysis of performance.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"Title: Metrics Dashboard\n\n1. Revenue\n- Total Revenue: $XXX,XXX\n- Monthly Revenue Growth: X%\n- Yearly...\""
+    "followup_prompt": "What is the best way to visualize the 'Customer Acquisition Cost (CAC) vs. Customer Lifetime Value (CLV)' metric?"
   },
   {
     "index": 24,
     "field": "#Data Analysis             ",
     "prompt": " Compare last year’s data with this year.",
     "response": "Last year, we saw a decrease in sales by 10% compared to this year. This could be attributed to the impact of the COVID-19 pandemic on consumer behavior and economic conditions. However, this year we have seen an increase in profits by 15% compared to last year, indicating a potential recovery in the market. Overall, there have been fluctuations in sales and profits between last year and this year, but it appears that we are moving in a positive direction towards growth.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"Last year, we saw a decrease in sales by 10% compared to this year. This could be attributed to the ...\""
+    "followup_prompt": "Can you break down the sales data by quarter for both years?"
   },
   {
     "index": 25,
     "field": "#Data Analysis             ",
     "prompt": " Find the anomalies in the dataset.",
     "response": "To find anomalies in a dataset, you can analyze the data using statistical methods or visualization techniques. Some common methods for detecting anomalies include:\n\n1. Z-score method: Calculate the z-score for each data point and identify points that fall beyond a certain threshold (e.g., a z-score of 3).\n\n2. Box plot: Create a box plot of the data and identify any data points that fall outside the whiskers of the plot.\n\n3. Scatter plot: Visualize the data in a scatter plot and look for data points that are significantly different from the rest of the data.\n\n4. Clustering: Use clustering algorithms to identify data points that do not belong to any cluster.\n\n5. Time series analysis: For temporal data, analyze trends and patterns to identify anomalous data points.\n\nBy applying these methods to your dataset, you can identify anomalies and further investigate them to understand the reasons behind their abnormal behavior.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"To find anomalies in a dataset, you can analyze the data using statistical methods or visualization ...\""
+    "followup_prompt": "Could you provide a Python code snippet demonstrating the Z-score method on a sample list of numbers?"
   },
   {
     "index": 26,
     "field": "#Data Analysis             ",
     "prompt": " Summarize the trends in the data.",
     "response": "The data shows that overall, there is a decrease in the number of COVID-19 cases, hospitalizations, and deaths over time. This suggests that efforts to control the spread of the virus, such as vaccination campaigns and public health measures, are having a positive impact. Additionally, there may be fluctuations in the data due to various factors such as new variants of the virus or changes in public behavior.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"The data shows that overall, there is a decrease in the number of COVID-19 cases, hospitalizations, ...\""
+    "followup_prompt": "What is the source of this data? Can you provide a link?"
   },
   {
     "index": 27,
     "field": "#Data Analysis             ",
     "prompt": " Report on customer behavior.",
     "response": "Customer behavior refers to the actions and decisions customers make when interacting with businesses and making purchasing decisions. Understanding customer behavior is crucial for businesses in order to effectively market their products or services, provide excellent customer service, and drive sales.\n\nThere are several key factors that influence customer behavior, including:\n\n1. Psychological factors: Customers' perceptions, beliefs, attitudes, and emotions can significantly impact their behavior. For example, a customer who has had a positive experience with a brand is more likely to make repeat purchases.\n\n2. Social factors: Customers' family, friends, and social networks can influence their purchasing decisions. Word-of-mouth recommendations and social proof play a significant role in shaping customer behavior.\n\n3. Cultural factors: Customers' cultural background, values, and norms can also impact their behavior. For example, customers from different cultural backgrounds may have different preferences for products and services.\n\n4. Personal factors: Customers' individual characteristics, such as age, gender, income, and lifestyle preferences, also play a role in influencing their behavior. Understanding these factors can help businesses tailor their marketing strategies to specific customer segments.\n\nIn addition to these factors, customer behavior is also influenced by external factors such as economic conditions, technological advancements, and industry trends.\n\nBusinesses can analyze customer behavior through various methods, such as conducting surveys, analyzing website traffic and sales data, monitoring social media interactions, and gathering feedback from customer service interactions. By understanding customer behavior, businesses can tailor their marketing strategies, improve customer engagement, and ultimately drive sales and grow their business.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"Customer behavior refers to the actions and decisions customers make when interacting with businesse...\""
+    "followup_prompt": "Based on this, can you draft a sample report on the online shopping behavior of Gen Z customers?"
   },
   {
     "index": 28,
     "field": "#Data Analysis             ",
     "prompt": " Visualize the data for management.",
     "response": "One way to visualize the data for management is to create a dashboard that displays key metrics and trends in a visually appealing and easy-to-understand format. This could include charts, graphs, and other visualizations that show how various aspects of the business are performing over time.\n\nAnother option is to create a heat map that visually represents data points based on their value, with colors indicating higher or lower values. This can help management quickly identify areas of strength and weakness in the business.\n\nAdditionally, using interactive data visualization tools such as Tableau or Power BI can allow management to explore the data in more detail, filtering and drilling down to specific data points of interest.\n\nOverall, visualizing the data for management can help them make more informed decisions and identify opportunities for improvement in the business.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"One way to visualize the data for management is to create a dashboard that displays key metrics and ...\""
+    "followup_prompt": "Please create a bar chart showing sales performance by product category using some sample data."
   },
   {
     "index": 29,
     "field": "#Data Analysis             ",
     "prompt": " Show the insights from the data.",
     "response": "Some potential insights from the data could include:\n\n1. There is a strong correlation between time spent studying and exam scores, indicating that students who study more tend to perform better on exams.\n2. Female students tend to perform better in exams compared to male students, suggesting potential differences in study habits or learning styles between genders.\n3. Students in higher grade levels tend to have higher exam scores, indicating a positive relationship between academic proficiency and years of education.\n4. There may be a relationship between socioeconomic status and exam scores, as students from higher income families tend to perform better on exams.\n5. Certain subjects may be more challenging for students, as evidenced by variations in exam scores across different subjects. This could indicate areas where students may need additional support or resources.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"Some potential insights from the data could include:\n\n1. There is a strong correlation between time ...\""
+    "followup_prompt": "Based on the insight that female students perform better, what are some actionable recommendations for the school?"
   },
   {
     "index": 30,
     "field": "#Data Analysis             ",
     "prompt": " Identify outliers in the records.",
     "response": "To identify outliers in the records, you can use statistical methods such as the z-score or Tukey's method. \n\n1. Z-score method: Calculate the z-score for each data point in the dataset. Any data point that has a z-score greater than 3 or less than -3 is considered an outlier.\n\n2. Tukey's method: Calculate the interquartile range (IQR) of the dataset (difference between the 75th and 25th percentiles). Any data point that falls below Q1 - 1.5 * IQR or above Q3 + 1.5 * IQR is considered an outlier.\n\nBy using these methods, you can identify outliers in the records and decide how to handle them (remove them, keep them, or investigate further).",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"To identify outliers in the records, you can use statistical methods such as the z-score or Tukey's ...\""
+    "followup_prompt": "What are the pros and cons of using the Z-score method versus Tukey's method?"
   },
   {
     "index": 31,
     "field": "#Education                 ",
     "prompt": " Prepare notes for the class.",
     "response": "1. Introduction to the topic of the day\n2. Key concepts and definitions related to the topic\n3. Overview of the main points to be covered during the class\n4. Relevant examples and case studies to illustrate the concepts\n5. Tips and strategies for understanding and applying the information\n6. Discussion questions to engage the students and promote active participation \n7. Summary of key takeaways from the class for review and understanding.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"1. Introduction to the topic of the day\n2. Key concepts and definitions related to the topic\n3. Over...\""
+    "followup_prompt": "Can you provide key concepts and definitions for a class on the basics of photosynthesis?"
   },
   {
     "index": 32,
     "field": "#Education                 ",
     "prompt": " Design a quiz for the students.",
     "response": "1. What is the capital city of France?\na) Paris\nb) London\nc) Berlin\nd) Madrid\n\n2. Who wrote the play \"Romeo and Juliet\"?\na) William Shakespeare\nb) Jane Austen\nc) Charles Dickens\nd) J.K. Rowling\n\n3. What is the chemical symbol for gold?\na) Au\nb) Ag\nc) Pb\nd) Fe\n\n4. Who painted the famous artwork \"Starry Night\"?\na) Claude Monet\nb) Vincent van Gogh\nc) Pablo Picasso\nd) Leonardo da Vinci\n\n5. In which year did World War II end?\na) 1945\nb) 1918\nc) 1939\nd) 1941\n\n6. What is the largest planet in our solar system?\na) Mars\nb) Jupiter\nc) Saturn\nd) Earth\n\n7. Who is the current President of the United States?\na) Joe Biden\nb) Donald Trump\nc) Barack Obama\nd) George W. Bush\n\n8. What is the longest river in the world?\na) Nile\nb) Amazon\nc) Mississippi\nd) Yangtze\n\n9. Who wrote the novel \"Pride and Prejudice\"?\na) Emily Bronte\nb) Charlotte Bronte\nc) Jane Austen\nd) F. Scott Fitzgerald\n\n10. What is the chemical formula for water?\na) H2O2\nb) CO2\nc) H2O\nd) CH4\n\nAnswers: 1) a) Paris, 2) a) William Shakespeare, 3) a) Au, 4) b) Vincent van Gogh, 5) a) 1945, 6) b) Jupiter, 7) a) Joe Biden, 8) a) Nile, 9) c) Jane Austen, 10) c) H2O",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"1. What is the capital city of France?\na) Paris\nb) London\nc) Berlin\nd) Madrid\n\n2. Who wrote the play...\""
+    "followup_prompt": "Can you convert this into a fill-in-the-blank quiz?"
   },
   {
     "index": 33,
     "field": "#Education                 ",
     "prompt": " Create an assignment on this topic.",
     "response": "Title: The Impact of Artificial Intelligence on Society\n\nObjective: \nTo examine the ways in which artificial intelligence is reshaping various aspects of society and to critically analyze the potential benefits and challenges associated with this technology.\n\nAssignment Instructions:\n\n1. Introduction:\nProvide an overview of artificial intelligence and its increasing influence on society. Define key terms and concepts related to AI.\n\n2. The Impact on Economy:\nDiscuss how artificial intelligence is transforming the economy, including the automation of jobs, the creation of new industries (such as self-driving cars), and the impact on income inequality.\n\n3. The Impact on Healthcare:\nExamine how AI is being used in healthcare, such as in diagnostic tools, personalized medicine, and health monitoring. Discuss the ethical considerations related to the use of AI in healthcare.\n\n4. The Impact on Education:\nExplore how artificial intelligence is being integrated into the education system, such as in personalized learning platforms, online tutoring, and educational assessment tools. Discuss the potential benefits and challenges of AI in education.\n\n5. The Impact on Privacy and Security:\nAnalyze the implications of AI on privacy and security, including concerns about data collection, surveillance, and potential misuse of AI technologies.\n\n6. Conclusion:\nSummarize the key points discussed in the paper and provide your personal perspective on the future of artificial intelligence in society.\n\n7. References:\nCite at least 5 scholarly sources to support your analysis and arguments.\n\nFormat:\n- The assignment should be written in APA format.\n- The paper should be 8-10 pages long, double-spaced, with 1-inch margins and 12-point font.\n- Include a title page and reference page in APA format.\n\nEvaluation Criteria:\n- Understanding of the topic and key concepts related to AI.\n- Depth of analysis and critical thinking.\n- Clarity and organization of ideas.\n- Integration of scholarly sources to support arguments.\n- Proper use of APA format for citations and references.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"Title: The Impact of Artificial Intelligence on Society\n\nObjective: \nTo examine the ways in which ar...\""
+    "followup_prompt": "Can you create a detailed grading rubric for this assignment?"
   },
   {
     "index": 34,
     "field": "#Education                 ",
     "prompt": " Make a lesson plan.",
     "response": "Subject: History\n\nGrade level: 8th grade\n\nObjective: Students will be able to understand key events and figures of the American Revolution.\n\nMaterials:\n- Textbooks\n- Primary source documents (letters, diaries, etc.)\n- Maps\n- Computer with internet access\n- Whiteboard and markers\n\nIntroduction (10 minutes):\n- Begin by asking students what they already know about the American Revolution. List their responses on the whiteboard.\n- Explain that today's lesson will focus on key events and figures of the American Revolution.\n\nActivity 1: Timeline (15 minutes)\n- Distribute primary source documents to small groups of students.\n- Instruct students to read the documents and create a timeline of key events of the American Revolution.\n- As a class, discuss the timeline and add any additional events that were not included in the documents.\n\nActivity 2: Mapping the Revolution (20 minutes)\n- Pass out maps of the thirteen colonies to each student.\n- Have students identify key battles and events of the American Revolution on the map.\n- Discuss the significance of each location and how it impacted the outcome of the war.\n\nActivity 3: Research Project (20 minutes)\n- Divide students into small groups and assign each group a key figure of the American Revolution (such as George Washington, Thomas Jefferson, or Paul Revere).\n- Instruct students to research their assigned figure and create a short presentation highlighting their contributions to the war.\n- Allow time for each group to present their findings to the class.\n\nConclusion (10 minutes)\n- Review key events and figures of the American Revolution with the class.\n- Ask students to reflect on how these events and figures shaped the course of American history.\n- Assign a short written response where students explain the significance of the American Revolution in shaping modern America.\n\nAssessment:\n- Evaluate student understanding based on participation in group activities, completion of the research project, and quality of written response.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"Subject: History\n\nGrade level: 8th grade\n\nObjective: Students will be able to understand key events ...\""
+    "followup_prompt": "How would you modify Activity 2 for visual learners versus kinesthetic learners?"
   },
   {
     "index": 35,
     "field": "#Education                 ",
     "prompt": " Write feedback for the student.",
     "response": "Overall, your work shows a strong understanding of the material and concepts covered. Your analysis is thorough and well-reasoned, and you support your arguments with clear examples and evidence. Your writing is clear and organized, making it easy to follow your thought process. \n\nOne area for improvement could be to expand on your ideas even further and provide more depth in your analysis. Additionally, be sure to proofread your work carefully for any errors in grammar or spelling. Overall, great job on this assignment. Keep up the good work!",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"Overall, your work shows a strong understanding of the material and concepts covered. Your analysis ...\""
+    "followup_prompt": "Can you make this feedback more specific for a student whose analysis was good but lacked sufficient evidence from the text?"
   },
   {
     "index": 36,
     "field": "#Education                 ",
     "prompt": " Assess the project submissions.",
     "response": "To assess project submissions, you should consider the following criteria:\n\n1. Relevance: Does the project address the identified problem or challenge effectively?\n2. Creativity: Is the project innovative and original in its approach?\n3. Feasibility: Are the proposed methods and resources realistic and achievable within the given timeframe?\n4. Impact: Can the project bring about meaningful change or improvement in the target area?\n5. Sustainability: Is the project designed to be sustainable in the long term?\n6. Collaboration: Does the project involve collaboration with relevant stakeholders or partners?\n7. Evaluation: Is there a clear plan for evaluating the project's success and measuring its impact?\n\nBy evaluating project submissions against these criteria, you can determine which projects are most promising and likely to succeed.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"To assess project submissions, you should consider the following criteria:\n\n1. Relevance: Does the p...\""
+    "followup_prompt": "How would you weight these criteria for a project focused on innovation versus one focused on feasibility?"
   },
   {
     "index": 37,
     "field": "#Education                 ",
     "prompt": " Grade the papers.",
     "response": "I'm sorry, I am not able to access or grade any papers as I do not have the ability to view or analyze documents. If you need help with editing or revising a paper, I would be happy to assist you with that.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"I'm sorry, I am not able to access or grade any papers as I do not have the ability to view or analy...\""
+    "followup_prompt": "I understand you can't grade it, but can you review a provided text for grammar and spelling errors?"
   },
   {
     "index": 38,
     "field": "#Education                 ",
     "prompt": " Prepare questions for the test.",
     "response": "1. What are the three branches of government in the United States and what are their functions?\n2. What is the significance of the Bill of Rights in the US Constitution?\n3. Explain the concepts of federalism and separation of powers.\n4. What is the process for amending the US Constitution?\n5. Describe the responsibilities and powers of the President of the United States.\n6. How does the electoral college work in the US presidential election?\n7. What is the role of the Supreme Court in the US legal system?\n8. Explain the process of how a bill becomes a law in the US Congress.\n9. What are the qualifications and term limits for members of the US House of Representatives and Senate?\n10. How does the system of checks and balances work to prevent any one branch of government from becoming too powerful?",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"1. What are the three branches of government in the United States and what are their functions?\n2. W...\""
+    "followup_prompt": "Can you rephrase questions 1 and 3 as true/false statements?"
   },
   {
     "index": 39,
     "field": "#Education                 ",
     "prompt": " Review the student’s progress.",
     "response": "The student has made significant progress in their academics over the past semester. They have shown improvement in their understanding of key concepts and have consistently demonstrated strong problem-solving skills. The student has also shown dedication to their studies, as evidenced by their attendance and participation in class. Overall, the student's progress is commendable and they are on track to achieving their academic goals.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"The student has made significant progress in their academics over the past semester. They have shown...\""
+    "followup_prompt": "Based on this progress, what are two specific, measurable academic goals you would suggest for the next semester?"
   },
   {
     "index": 40,
     "field": "#Education                 ",
     "prompt": " Guide the students through the activity.",
     "response": "1. Start by explaining the purpose of the activity, which is to help students practice critical thinking and problem-solving skills.\n\n2. Divide the students into small groups of 3-4 members each.\n\n3. Provide each group with a set of materials such as paper, markers, scissors, tape, and any other craft supplies they may need.\n\n4. Present the students with a scenario or problem that they need to solve using the materials provided. For example, you could ask them to build a tower that can hold a certain weight, or create a device that can transport an object across the room.\n\n5. Encourage the students to brainstorm ideas and work together collaboratively to come up with a solution. Remind them to consider factors such as stability, weight distribution, and overall design.\n\n6. Give the groups a set amount of time to complete the task, and be available to answer any questions or provide guidance as needed.\n\n7. Once the time is up, have each group present their solution to the rest of the class. Encourage them to explain their thought process and the challenges they faced during the activity.\n\n8. Encourage feedback and discussion from the class, pointing out strengths and areas for improvement in each group's solution.\n\n9. Finally, debrief the activity by discussing what the students learned and how they can apply these problem-solving skills in future situations.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"1. Start by explaining the purpose of the activity, which is to help students practice critical thin...\""
+    "followup_prompt": "Can you suggest another problem scenario for this activity, but one that focuses on communication skills?"
   },
   {
     "index": 41,
     "field": "#Technical Writing         ",
     "prompt": " Document the system architecture.",
     "response": "The system architecture consists of several components that work together to provide the functionality of the software system. \n\n1. Client Interface:\n- The client interface is the front-end component that the users interact with to input data and request information. It includes a user-friendly interface that allows users to navigate the system and access the features provided.\n\n2. Application Logic:\n- The application logic is the middle-tier component that processes user inputs and requests, enforces business rules, and communicates with the database. It is responsible for coordinating the flow of data and controlling the operation of the system.\n\n3. Database Management System (DBMS):\n- The DBMS is the backend component that stores and manages the data used by the system. It provides a structured way to store, retrieve, and update data, ensuring data integrity and security.\n\n4. Server:\n- The server acts as a bridge between the client interface and the application logic. It handles incoming requests from clients, routes them to the appropriate components, and sends back responses to the clients. The server also manages the interaction between different components of the system.\n\n5. Networking:\n- Networking components are used to establish communication between different parts of the system, including clients, servers, and databases. This includes protocols for data transfer, authentication, and encryption to ensure the secure and efficient transfer of data.\n\nOverall, the system architecture is designed to be scalable, reliable, and maintainable. It separates concerns between different components, allowing for easier maintenance and upgrades. It also ensures that the system can handle a large number of users and data without sacrificing performance.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"The system architecture consists of several components that work together to provide the functionali...\""
+    "followup_prompt": "Can you create a simple diagram representing this architecture using mermaid syntax?"
   },
   {
     "index": 42,
     "field": "#Technical Writing         ",
     "prompt": " Write the user manual.",
     "response": "User Manual\n\nCongratulations on your new product! This user manual contains important information on how to properly use and maintain your product. Please read this manual carefully before using your product to ensure safe and efficient operation.\n\n1. Product Overview\n- This product is a [insert product type], designed to [brief description of product purpose].\n- The product comes with the following parts: [list of included parts].\n- Please check the contents of the package to ensure that all parts are included.\n\n2. Installation\n- Before installing the product, make sure to read all instructions carefully.\n- Place the product on a flat, stable surface.\n- Follow the installation instructions provided in the manual to properly set up the product.\n- Ensure that all connections are secure and properly tightened.\n\n3. Operation\n- To turn on the product, press the power button located [location of power button].\n- Use the control panel to adjust settings, such as temperature, speed, or mode.\n- Follow the instructions provided in the manual for proper operation of the product.\n- Do not operate the product in wet or humid conditions.\n- Keep the product away from heat sources and direct sunlight.\n\n4. Maintenance\n- Regular maintenance is important to ensure the longevity and efficiency of the product.\n- Clean the product regularly using a soft, damp cloth.\n- Do not use harsh chemicals or abrasive cleaners on the product.\n- Check and replace any worn or damaged parts as needed.\n- Store the product in a cool, dry place when not in use.\n\n5. Safety Precautions\n- Read and follow all safety instructions provided in the manual.\n- Keep the product away from children and pets.\n- Do not attempt to disassemble or repair the product yourself.\n- If the product malfunctions or shows signs of damage, discontinue use immediately and contact customer support.\n\n6. Troubleshooting\n- If you encounter any issues with the product, consult the troubleshooting section of the manual.\n- Follow the troubleshooting steps provided to try and resolve the issue.\n- If the issue persists, contact customer support for further assistance.\n\nThank you for choosing our product. If you have any questions or need further assistance, please contact customer support at [contact information]. Enjoy your new product!",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"User Manual\n\nCongratulations on your new product! This user manual contains important information on...\""
+    "followup_prompt": "Can you fill out the 'Product Overview' and 'Installation' sections for a smart coffee maker?"
   },
   {
     "index": 43,
     "field": "#Technical Writing         ",
     "prompt": " Update the product documentation.",
     "response": "I'm happy to help with that! Could you please provide me with the details of the product that needs to be updated in the documentation?",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"I'm happy to help with that! Could you please provide me with the details of the product that needs ...\""
+    "followup_prompt": "The product is our 'Smart Lightbulb v2'. We need to add a new section about integration with a new smart home app."
   },
   {
     "index": 44,
     "field": "#Technical Writing         ",
     "prompt": " Create a FAQ section.",
     "response": "Q: What is a FAQ section?\n\nA: A FAQ section, or Frequently Asked Questions section, is a portion of a website or document that addresses common questions, concerns, or queries that users may have.\n\nQ: Why is a FAQ section important?\n\nA: A FAQ section is important because it can provide users with quick and easy access to answers to common questions, ultimately helping to save time and improve the overall user experience on a website or document.\n\nQ: How do I create a successful FAQ section?\n\nA: To create a successful FAQ section, it is important to gather feedback from users to identify common questions, organize questions into categories or sections, provide clear and concise answers, and regularly update the section as needed.\n\nQ: How can I make sure my FAQ section is user-friendly?\n\nA: To ensure your FAQ section is user-friendly, consider using clear and straightforward language, organizing questions in a logical manner, incorporating search functionality, and including links to more detailed information if necessary.\n\nQ: What type of questions should be included in a FAQ section?\n\nA: The questions included in a FAQ section should address common inquiries that users may have about a product, service, company, or topic. It is important to focus on answering questions that are relevant and helpful to users.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"Q: What is a FAQ section?\n\nA: A FAQ section, or Frequently Asked Questions section, is a portion of ...\""
+    "followup_prompt": "Can you generate 3-5 sample FAQ questions and answers for a subscription-based meal kit service?"
   },
   {
     "index": 45,
     "field": "#Technical Writing         ",
     "prompt": " Prepare the release notes.",
     "response": "Release Notes\n\nVersion 2.0.3\n\nWe are excited to announce the latest update for our software! This release includes several improvements and bug fixes to enhance your user experience. \n\nKey updates include:\n\n- Improved user interface design for easier navigation and usability\n- Fixed issue with data syncing that was causing delays in the system\n- Enhanced security measures to protect your data and keep it safe\n- Streamlined processes for faster performance and increased efficiency\n- Updated documentation and support resources for better troubleshooting \n\nWe are constantly working to improve our software and welcome any feedback or suggestions you may have. Thank you for your continued support and we hope you enjoy using the latest version of our software!\n\nFor more information or assistance, please contact our customer support team at support@company.com.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"Release Notes\n\nVersion 2.0.3\n\nWe are excited to announce the latest update for our software! This re...\""
+    "followup_prompt": "Can you rewrite this for a more technical audience, including specific version numbers of updated libraries?"
   },
   {
     "index": 46,
     "field": "#Technical Writing         ",
     "prompt": " Describe the installation process.",
     "response": "The installation process generally involves the following steps:\n\n1. Planning: The first step is to plan out the installation process, including determining the location for the installation, preparing the area, and ensuring all necessary tools and materials are on hand.\n\n2. Preparation: The area where the installation will take place is typically cleaned and prepped to ensure a smooth installation process. This may involve removing any existing fixtures or furniture, as well as ensuring the area is level and free of obstructions.\n\n3. Assembly: The components of the installation are typically assembled according to the manufacturer's instructions. This may involve connecting various parts together, following a specific order of assembly, and securing them in place.\n\n4. Installation: Once the components are assembled, they are typically installed in the designated location. This may involve securing the components to a wall or floor, using appropriate hardware or adhesive.\n\n5. Connection: If the installation involves any electrical, plumbing, or other connections, these are typically made at this stage. This may involve wiring or piping the components to ensure they are properly functioning.\n\n6. Finishing touches: Finally, any finishing touches are added to complete the installation. This may involve applying caulk or sealant, adjusting the components for optimal performance, and ensuring everything is secure and functioning properly.\n\nOverall, the installation process can vary depending on the specific type of installation being performed, but generally follows these steps to ensure a successful and efficient installation.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"The installation process generally involves the following steps:\n\n1. Planning: The first step is to ...\""
+    "followup_prompt": "Can you describe the installation process for a Python package using pip?"
   },
   {
     "index": 47,
     "field": "#Technical Writing         ",
     "prompt": " Write a troubleshooting guide.",
     "response": "Troubleshooting Guide\n\n1. Identify the Problem: The first step in troubleshooting is to clearly identify the problem. Take note of any error messages or unusual behavior that is occurring.\n\n2. Check for Basic Issues: Start by checking for common issues such as power outages, loose connections, or software updates that may be causing the problem.\n\n3. Restart the Device: Sometimes simply restarting the device can resolve the issue. Try turning the device off and then back on again to see if that fixes the problem.\n\n4. Check for Updates: Make sure that all software and firmware are up to date. Check for any updates for the device or software that may address the issue.\n\n5. Test Different Components: If the problem persists, try testing different components of the device to see if the issue lies with a specific part. For example, try using a different power cable or connecting the device to a different outlet.\n\n6. Seek Help: If you are unable to resolve the issue on your own, consider seeking help from a technical support team or consulting online forums for advice. Provide a detailed description of the problem and any steps you have already taken to troubleshoot.\n\n7. Contact Customer Support: If the problem still persists, contact the manufacturer's customer support for further assistance. Provide them with all relevant information about the issue and any troubleshooting steps you have taken.\n\n8. Document the Issue: Keep a record of the problem, troubleshooting steps, and any solutions that were attempted. This will help in future troubleshooting efforts and can be useful for reference if the problem occurs again.\n\n9. Prevent Future Issues: Once the problem has been resolved, take steps to prevent it from happening again in the future. This can include regular maintenance, updates, and following best practices for using the device.\n\nBy following these troubleshooting steps, you should be able to identify and resolve most common issues that may arise with your devices. Remember to stay patient and thorough in your troubleshooting efforts to ensure a successful resolution.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"Troubleshooting Guide\n\n1. Identify the Problem: The first step in troubleshooting is to clearly iden...\""
+    "followup_prompt": "Can you write a specific troubleshooting guide for a 'Wi-Fi connected but no internet' issue?"
   },
   {
     "index": 48,
     "field": "#Technical Writing         ",
     "prompt": " Edit the technical report.",
     "response": "Title: A Study of the Effects of Temperature on Solar Panel Efficiency\n\nIntroduction:\n\nSolar panels are becoming an increasingly popular form of renewable energy generation. However, their efficiency can be affected by various factors, including temperature. This study aims to investigate the impact of temperature on the efficiency of solar panels.\n\nMethodology:\n\nTo conduct this study, a solar panel was exposed to various temperature settings in a controlled environment. The efficiency of the solar panel was measured at each temperature setting, and the data was recorded for analysis.\n\nResults:\n\nThe data gathered during the experiment shows a clear correlation between temperature and solar panel efficiency. As the temperature increased, the efficiency of the solar panel decreased. This can be attributed to the fact that higher temperatures can cause an increase in resistance within the solar cells, leading to a decrease in power output.\n\nConclusion:\n\nBased on the results of this study, it is evident that temperature plays a significant role in determining the efficiency of solar panels. It is important for solar panel manufacturers and users to consider the effects of temperature on the performance of solar panels in order to maximize their efficiency and effectiveness.\n\nFuture Research:\n\nFurther research could explore ways to mitigate the impact of temperature on solar panel efficiency, such as incorporating new materials or technologies that are less sensitive to temperature fluctuations. Additionally, studying the effects of temperature on different types of solar panels and configurations could provide valuable insights for improving their performance.\n\nOverall, this study highlights the importance of understanding and addressing the effects of temperature on solar panel efficiency in order to optimize their performance and maximize their potential as a renewable energy source.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"Title: A Study of the Effects of Temperature on Solar Panel Efficiency\n\nIntroduction:\n\nSolar panels ...\""
+    "followup_prompt": "Can you write a one-paragraph executive summary for this report?"
   },
   {
     "index": 49,
     "field": "#Technical Writing         ",
     "prompt": " Summarize the findings in the document.",
     "response": "The document presents findings from a study that examined the impact of technological innovations on employee productivity and job satisfaction. The study found that employees who were provided with the latest technology reported increased productivity and job satisfaction compared to those who were not. Additionally, employees who had access to flexible working arrangements, such as remote work options, also reported higher job satisfaction levels. The findings suggest that investing in technology and creating flexible work policies can positively impact employee performance and job satisfaction.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"The document presents findings from a study that examined the impact of technological innovations on...\""
+    "followup_prompt": "What kind of study was this (e.g., survey, controlled experiment)? What was the sample size?"
   },
   {
     "index": 50,
     "field": "#Technical Writing         ",
     "prompt": " Revise the draft for clarity.",
     "response": "Please provide the draft for revision.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"Please provide the draft for revision....\""
+    "followup_prompt": "Here is the draft: 'The implementation of the new synergistic framework will leverage core competencies to maximize stakeholder value.' Please make it clearer."
   },
   {
     "index": 51,
     "field": "#Human Resources           ",
     "prompt": " Schedule interviews for the applicants.",
     "response": "To schedule interviews for the applicants, follow these steps:\n\n1. Contact each applicant to determine their availability for an interview.\n2. Create a schedule that includes time slots for the interviews.\n3. Communicate the schedule of interviews to the applicants, ensuring they are aware of the date, time, and location of their interview.\n4. Coordinate with the hiring team or relevant stakeholders to ensure they are available to conduct the interviews.\n5. Confirm the interviews with the applicants and provide any additional information they may need prior to the interview.\n6. Follow up with the applicants after the interviews to provide feedback or next steps in the hiring process.\n\nIt is important to be organized and communicate clearly with all parties involved to ensure a smooth interview process.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"To schedule interviews for the applicants, follow these steps:\n\n1. Contact each applicant to determi...\""
+    "followup_prompt": "Can you draft a sample email to an applicant to schedule their first interview?"
   },
   {
     "index": 52,
     "field": "#Human Resources           ",
     "prompt": " Prepare an onboarding plan.",
     "response": "Onboarding Plan for New Employee\n\n1. Welcome and Introduction\n- Meet with the new employee on their first day and give them a warm welcome to the team.\n- Provide a tour of the office and introduce them to their colleagues.\n- Review the company's mission, values, and culture.\n\n2. Training and Orientation\n- Schedule training sessions to familiarize the new employee with their role, responsibilities, and expectations.\n- Provide an orientation on company policies, procedures, and benefits.\n- Assign a mentor or buddy to help the new employee acclimate to their role and the team.\n\n3. Goal Setting\n- Meet with the new employee to discuss their short-term and long-term goals.\n- Set clear performance expectations and establish milestones for success.\n- Provide regular feedback and support to help the new employee achieve their goals.\n\n4. Professional Development\n- Identify opportunities for the new employee to develop their skills and knowledge.\n- Encourage participation in training programs, workshops, and conferences.\n- Support the new employee in creating a development plan to grow in their role.\n\n5. Follow-up and Feedback\n- Schedule regular check-ins to discuss progress, address any concerns, and provide feedback.\n- Encourage open communication and create a safe space for the new employee to share their thoughts and ideas.\n- Adjust the onboarding plan as needed to ensure the new employee's success.\n\n6. Integration and Engagement\n- Encourage participation in team-building activities and social events to foster connections with colleagues.\n- Provide opportunities for the new employee to contribute their unique perspectives and ideas.\n- Celebrate milestones and achievements to demonstrate appreciation for their contributions.\n\nBy following this onboarding plan, we aim to set up the new employee for success and ensure a seamless transition into their role within the organization.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"Onboarding Plan for New Employee\n\n1. Welcome and Introduction\n- Meet with the new employee on their ...\""
+    "followup_prompt": "Can you create a more detailed checklist for the first day of the onboarding plan?"
   },
   {
     "index": 53,
     "field": "#Human Resources           ",
     "prompt": " Update the employee records.",
     "response": "I'm sorry, but I am an AI assistant and I do not have access to specific employee records. Please reach out to your HR department or supervisor for assistance with updating employee records.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"I'm sorry, but I am an AI assistant and I do not have access to specific employee records. Please re...\""
+    "followup_prompt": "What kind of information is typically stored in employee records?"
   },
   {
     "index": 54,
     "field": "#Human Resources           ",
     "prompt": " Draft a policy for remote work.",
     "response": "Remote Work Policy\n\nIntroduction:\nCompany X recognizes that in today’s fast-paced and ever-evolving business landscape, flexibility in work arrangements is essential to attract and retain top talent. This remote work policy outlines the guidelines and expectations for employees who wish to work remotely.\n\n1. Eligibility:\nEmployees may be eligible to work remotely if their job duties allow for remote work, and if they have demonstrated good performance and productivity while working in the office. Eligibility for remote work will be determined on a case-by-case basis by the employee's manager.\n\n2. Remote Work Arrangements:\nEmployees may work remotely on a part-time or full-time basis, subject to approval by their manager. Remote work arrangements must be planned in advance and approved by the employee's manager. Employees must have access to the necessary technology and resources to effectively work remotely.\n\n3. Communication:\nRemote employees are expected to maintain regular communication with their manager and team members. This includes checking in via email, chat, or phone calls, attending virtual meetings, and providing timely updates on their work progress.\n\n4. Work Hours:\nRemote employees are expected to adhere to their regular work hours, as outlined in their employment contract. They must be available during working hours for meetings, calls, and other work-related activities.\n\n5. Performance Expectations:\nRemote employees are expected to maintain the same level of productivity and performance as their in-office counterparts. Regular performance evaluations will be conducted to ensure that remote employees are meeting their goals and objectives.\n\n6. Data Security:\nRemote employees are responsible for ensuring the security of company data and confidential information. They must adhere to all company policies and procedures related to data security, including using secure networks and devices, and not sharing sensitive information with unauthorized individuals.\n\n7. Expenses:\nEmployees working remotely may be eligible for reimbursement of certain expenses incurred while working remotely, such as internet and phone bills. Employees should consult with their manager or HR department for details on reimbursement procedures.\n\n8. Termination of Remote Work Arrangements:\nCompany X reserves the right to revoke remote work arrangements at any time, at the discretion of the employee's manager. If an employee's remote work arrangement is terminated, they will be required to return to the office on a full-time basis.\n\n9. Policy Violations:\nEmployees who violate this remote work policy may be subject to disciplinary action, up to and including termination of employment.\n\nThis remote work policy is subject to change at the discretion of Company X. Employees are encouraged to review this policy periodically for updates and changes.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"Remote Work Policy\n\nIntroduction:\nCompany X recognizes that in today’s fast-paced and ever-evolving ...\""
+    "followup_prompt": "Can you add a section about equipment and home office setup?"
   },
   {
     "index": 55,
     "field": "#Human Resources           ",
     "prompt": " Review the job descriptions.",
     "response": "I'm sorry, but I would need to see the job descriptions in order to review them. Can you please provide me with the job descriptions?",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"I'm sorry, but I would need to see the job descriptions in order to review them. Can you please prov...\""
+    "followup_prompt": "Please review this job description for a 'Marketing Manager' role for clarity and inclusivity."
   },
   {
     "index": 56,
     "field": "#Human Resources           ",
     "prompt": " Organize a training session.",
     "response": "Title: Leadership Development Training Session\n\nDate: Friday, March 12th\n\nTime: 9:00 am - 12:00 pm\n\nLocation: Conference Room A\n\nAgenda:\n\n9:00 am - 9:15 am: Welcome and Introductions\n- Brief overview of the training session\n- Introduction of facilitators and participants\n\n9:15 am - 10:00 am: Understanding Leadership\n- Definition of leadership\n- Different leadership styles\n- Importance of effective leadership in the workplace\n\n10:00 am - 10:30 am: Developing Leadership Skills\n- Communication skills\n- Problem-solving skills\n- Decision-making skills\n\n10:30 am - 10:45 am: Break\n\n10:45 am - 11:30 am: Practical Exercises and Case Studies\n- Group activities to practice leadership skills\n- Analysis of real-life leadership scenarios\n\n11:30 am - 12:00 pm: Action Planning and Next Steps\n- Setting goals for further leadership development\n- Resources for continued learning and growth\n\n12:00 pm: Closing Remarks\n\nPlease come prepared with a notebook and pen for note-taking. Snacks and refreshments will be provided. Thank you for your participation and dedication to improving your leadership skills.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"Title: Leadership Development Training Session\n\nDate: Friday, March 12th\n\nTime: 9:00 am - 12:00 pm\n\n...\""
+    "followup_prompt": "Can you suggest a specific group activity for the 'Practical Exercises and Case Studies' section?"
   },
   {
     "index": 57,
     "field": "#Human Resources           ",
     "prompt": " Send out the offer letters.",
     "response": "Dear [Candidate],\n\nWe are pleased to inform you that you have been selected for the [position title] role at [Company Name]. Congratulations!\n\nPlease find attached your official offer letter detailing the terms and conditions of your employment. We are excited to welcome you to our team and look forward to working together.\n\nIf you have any questions or concerns, please do not hesitate to reach out to us. We kindly request that you review the offer letter and confirm your acceptance by [offer expiry date].\n\nWe are confident that you will be a valuable addition to our team and we are excited for you to start your journey with us.\n\nWarm regards,\n\n[Your Name]\n[Your Title]\n[Company Name]",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"Dear [Candidate],\n\nWe are pleased to inform you that you have been selected for the [position title]...\""
+    "followup_prompt": "What are the key components that must be included in an official offer letter?"
   },
   {
     "index": 58,
     "field": "#Human Resources           ",
     "prompt": " Handle the employee grievances.",
     "response": "When handling employee grievances, it's important to listen to the employee's concerns with empathy and understanding. Here are some steps to effectively handle employee grievances:\n\n1. Listen to the employee: Allow the employee to share their concerns and grievances without interruption. Let them know that you are there to listen and support them.\n\n2. Gather information: Get all the necessary information and details related to the grievance. This may include talking to other employees involved, reviewing relevant documents, and conducting investigations if needed.\n\n3. Assess the situation: Analyze the information gathered to understand the root cause of the grievance. Determine whether the grievance is valid and if any policies or rules have been violated.\n\n4. Provide support: Offer emotional support to the employee during the grievance process. Reassure them that their concerns are being taken seriously and will be addressed promptly.\n\n5. Take appropriate action: Depending on the nature of the grievance, take necessary actions to resolve the issue. This may include mediation, counseling, disciplinary action, or corrective measures.\n\n6. Follow-up: After addressing the grievance, follow up with the employee to ensure that the issue has been resolved satisfactorily and that they are satisfied with the outcome.\n\n7. Document the process: Keep detailed records of all communication and actions taken during the grievance handling process. This will help in case of any future disputes or complaints.\n\nBy following these steps, you can effectively handle employee grievances and maintain a positive work environment for all employees.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"When handling employee grievances, it's important to listen to the employee's concerns with empathy ...\""
+    "followup_prompt": "What is the best way to document the grievance process to ensure legal compliance?"
   },
   {
     "index": 59,
     "field": "#Human Resources           ",
     "prompt": " Collect feedback from the staff.",
     "response": "One way to collect feedback from staff is to conduct anonymous surveys. This can provide employees with a safe space to share their thoughts and opinions without fear of retribution.\n\nAnother option is to hold regular one-on-one meetings with each employee to discuss their thoughts on the company, their role, and any suggestions for improvement.\n\nYou could also create a suggestion box where staff can submit their feedback anonymously.\n\nAdditionally, implementing a feedback platform or software can allow employees to provide feedback in real-time and track trends over time.\n\nOverall, it is important to create a culture of open communication and transparency so that employees feel comfortable sharing their feedback and suggestions.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"One way to collect feedback from staff is to conduct anonymous surveys. This can provide employees w...\""
+    "followup_prompt": "Can you draft 5 questions for an anonymous employee satisfaction survey?"
   },
   {
     "index": 60,
     "field": "#Human Resources           ",
     "prompt": " Process the payroll.",
     "response": "Processing payroll involves calculating employee wages, withholding taxes, and other deductions, and issuing payments to employees. Here are the steps involved in processing payroll:\n\n1. Gather employee time data: Collect information on hours worked, overtime, sick leave, vacation time, and any other relevant data for each employee.\n\n2. Calculate gross pay: Multiply the number of hours worked by the employee's hourly rate to determine gross pay. For salaried employees, divide the annual salary by the number of pay periods in the year.\n\n3. Deduct taxes and other withholdings: Calculate federal, state, and local income taxes, as well as Social Security and Medicare deductions. Deduct any other applicable withholdings, such as retirement contributions, insurance premiums, or wage garnishments.\n\n4. Calculate net pay: Subtract all deductions from gross pay to calculate each employee's net pay.\n\n5. Issue payments: Pay employees either by direct deposit or by issuing paper checks. Be sure to include pay stubs detailing gross pay, deductions, and net pay.\n\n6. Submit tax payments: Submit payroll taxes to the appropriate government agencies, such as the IRS, state revenue departments, and Social Security Administration.\n\n7. Record payroll transactions: Keep accurate records of payroll transactions for each pay period, and reconcile these records with financial statements.\n\n8. File payroll reports: Submit quarterly and annual payroll reports to the IRS and other tax authorities.\n\n9. Stay compliant: Ensure that all payroll activities comply with federal, state, and local labor laws and regulations.\n\nBy following these steps, you can effectively process payroll and ensure that employees are paid accurately and on time.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"Processing payroll involves calculating employee wages, withholding taxes, and other deductions, and...\""
+    "followup_prompt": "What are some common payroll mistakes and how can they be avoided?"
   },
   {
     "index": 61,
     "field": "#General Question Answering",
     "prompt": " What is the best way to improve productivity?",
     "response": "There are several ways to improve productivity, but some of the most effective methods include:\n\n1. Prioritize tasks: Focus on completing high-priority tasks first and maintain a to-do list to stay organized.\n\n2. Eliminate distractions: Minimize interruptions by turning off notifications, setting specific work hours, and creating a dedicated workspace.\n\n3. Time management: Use time-blocking techniques to schedule your day and allocate specific time slots for different tasks.\n\n4. Break tasks into smaller steps: Divide large projects into smaller, more manageable tasks to prevent feeling overwhelmed and boost motivation.\n\n5. Take regular breaks: Resting periodically can help recharge your energy levels and improve focus and concentration.\n\n6. Delegate tasks: Delegate tasks that can be completed by others to free up your time for more important responsibilities.\n\n7. Learn new skills: Continuously improving your skills and knowledge can help you work more efficiently and effectively.\n\n8. Get organized: Keep your workspace tidy and develop systems to maintain order and streamline processes.\n\n9. Stay healthy: Ensure you get enough sleep, exercise regularly, and maintain a healthy diet to boost energy levels and overall well-being. \n\n10. Utilize productivity tools: Use tools like project management software, time-tracking apps, and automation tools to streamline tasks and enhance productivity.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"There are several ways to improve productivity, but some of the most effective methods include:\n\n1. ...\""
+    "followup_prompt": "Can you elaborate on the time-blocking technique and provide an example schedule?"
   },
   {
     "index": 62,
     "field": "#General Question Answering",
     "prompt": " How can I make a presentation more engaging?",
     "response": "1. Start with a strong opening: Capture your audience's attention right from the start by using a powerful quote, a compelling statistic, an interesting story, or a thought-provoking question.\n\n2. Use visuals: Incorporate images, videos, charts, graphs, and other visual aids to help illustrate your points and keep your audience visually engaged.\n\n3. Tell a story: Present your information in the form of a narrative to make it more relatable and memorable for your audience.\n\n4. Ask for audience participation: Encourage interactive elements such as asking questions, conducting polls, or inviting audience members to share their thoughts and experiences.\n\n5. Keep it dynamic: Vary your delivery style, pace, and tone to maintain the interest of your audience. Move around the stage, make eye contact, use gestures, and speak with enthusiasm.\n\n6. Break up the content: Avoid overwhelming your audience with too much information at once. Break up your presentation into smaller sections, and include breaks or interactive activities to keep your audience engaged.\n\n7. Use humor: Incorporate humor into your presentation to lighten the mood and keep your audience entertained. Just make sure the humor is appropriate for the context and audience.\n\n8. Make it interactive: Include activities, exercises, or group discussions to actively engage your audience and encourage participation.\n\n9. Personalize the content: Tailor your presentation to your audience's interests, needs, and preferences to make it more relevant and engaging for them.\n\n10. Practice, practice, practice: Rehearse your presentation multiple times to ensure that you are confident and comfortable delivering it, which will help you engage your audience more effectively.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"1. Start with a strong opening: Capture your audience's attention right from the start by using a po...\""
+    "followup_prompt": "What are some examples of interactive elements I can include in a virtual presentation?"
   },
   {
     "index": 63,
     "field": "#General Question Answering",
     "prompt": " Why did the project fail?",
     "response": "There could be various reasons why a project may have failed, including:\n1. Inadequate planning and project management\n2. Lack of communication and collaboration among team members\n3. Insufficient resources or budget constraints\n4. Changing requirements or scope creep\n5. Technical difficulties or limitations\n6. Lack of stakeholder involvement and support\n7. Poor risk management\n8. Ineffective leadership or decision-making\n9. External factors such as market changes or regulatory issues.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"There could be various reasons why a project may have failed, including:\n1. Inadequate planning and ...\""
+    "followup_prompt": "Can you explain 'scope creep' in more detail and provide an example?"
   },
   {
     "index": 64,
     "field": "#General Question Answering",
     "prompt": " What is the most effective solution?",
     "response": "It depends on the specific problem or issue being addressed. In general, the most effective solution is one that is carefully planned, based on evidence and data, and addresses the root cause of the problem. Additionally, involving relevant stakeholders in the decision-making process and ensuring buy-in from those affected by the solution can also contribute to its effectiveness. Ultimately, the most effective solution is one that achieves the desired outcomes and leads to sustained positive change.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"It depends on the specific problem or issue being addressed. In general, the most effective solution...\""
+    "followup_prompt": "Can you provide a framework for identifying the root cause of a problem?"
   },
   {
     "index": 65,
     "field": "#General Question Answering",
     "prompt": " How should I respond to criticism?",
     "response": "1. Stay calm: It's important to remain calm and composed when receiving criticism. Take a deep breath and try to listen to the feedback without getting defensive.\n\n2. Acknowledge the feedback: Thank the person for their input and show that you are open to hearing what they have to say. This can help to establish a constructive dialogue.\n\n3. Reflect on the criticism: Take some time to reflect on what was said and consider if there is any truth to the feedback. Be open to self-improvement and growth.\n\n4. Ask for clarification: If the criticism is unclear or vague, ask for specific examples or more details to better understand where the feedback is coming from.\n\n5. Respond thoughtfully: If you feel the criticism is valid, acknowledge it and explain how you plan to address it in the future. If you disagree with the criticism, respectfully explain your perspective.\n\n6. Learn from the criticism: Use the feedback as an opportunity for personal or professional growth. Consider how you can use the criticism to improve and become a better version of yourself.\n\n7. Practice self-care: Receiving criticism can be tough, so make sure to take care of yourself mentally and emotionally. Surround yourself with supportive people and engage in activities that help you feel good about yourself.\n\nRemember, receiving criticism is a normal part of life and can be a valuable tool for personal and professional development. Approach it with an open mind and a willingness to learn and grow.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"1. Stay calm: It's important to remain calm and composed when receiving criticism. Take a deep breat...\""
+    "followup_prompt": "What's a good way to ask for clarification without sounding defensive?"
   },
   {
     "index": 66,
     "field": "#General Question Answering",
     "prompt": " What steps should I take next?",
     "response": "1. Assess your current situation and identify your goals or objectives.\n2. Create a plan of action that outlines specific steps to achieve your goals.\n3. Prioritize your tasks and set a timeline for completing them.\n4. Gather any necessary resources or information needed to move forward.\n5. Start taking action and regularly review your progress to make any necessary adjustments.\n6. Stay organized and focused on your goals, persistence is key in achieving success.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"1. Assess your current situation and identify your goals or objectives.\n2. Create a plan of action t...\""
+    "followup_prompt": "Can you recommend a tool or method for prioritizing tasks?"
   },
   {
     "index": 67,
     "field": "#General Question Answering",
     "prompt": " Is this approach better than the other?",
     "response": "It is impossible to determine whether one approach is better than another without more context. It ultimately depends on the specific situation, goals, and resources available. It is important to carefully consider all factors and stakeholders involved in order to make an informed decision about the best approach to take.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"It is impossible to determine whether one approach is better than another without more context. It u...\""
+    "followup_prompt": "What factors should I consider when comparing two different approaches to solving a problem?"
   },
   {
     "index": 68,
     "field": "#General Question Answering",
     "prompt": " What are the key challenges?",
     "response": "Some key challenges that individuals and organizations may face include:\n\n1. Lack of resources: Limited funding, manpower, and technology can hinder progress in achieving goals and objectives.\n\n2. Competition: In a crowded marketplace, standing out from competitors and gaining market share can be a significant challenge.\n\n3. Changing market conditions: Economic fluctuations, political instability, and evolving consumer trends can impact business operations and strategies.\n\n4. Regulatory compliance: Adhering to constantly changing laws and regulations can be time-consuming and costly for organizations.\n\n5. Technological advancements: Keeping up with rapid advancements in technology and digital transformation can be challenging for organizations.\n\n6. Talent acquisition and retention: Recruiting and retaining skilled employees is crucial for success, but can be difficult in a competitive job market.\n\n7. Globalization: Expanding into international markets brings opportunities for growth, but also challenges such as cultural differences and varying business practices.\n\n8. Risk management: Identifying and mitigating risks, such as cybersecurity threats, supply chain disruptions, and natural disasters, is essential for protecting the organization.\n\n9. Sustainability and social responsibility: Meeting the demands of environmentally conscious consumers and stakeholders, while also promoting social responsibility, can be a challenge for organizations.\n\n10. Adaptability and innovation: Staying ahead of the curve and continually adapting to change is vital for long-term success, but can be challenging in a fast-paced and dynamic business environment.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"Some key challenges that individuals and organizations may face include:\n\n1. Lack of resources: Limi...\""
+    "followup_prompt": "For a small startup, which three of these challenges are typically the most critical to address first?"
   },
   {
     "index": 69,
     "field": "#General Question Answering",
     "prompt": " Who should be involved in this decision?",
     "response": "The decision-makers involved in this decision should include key stakeholders and subject matter experts relevant to the issue at hand. This may include individuals from different departments within an organization, external consultants, and potentially customers or clients affected by the decision. It is important to involve individuals who have the necessary expertise and knowledge to provide valuable insights and perspectives on the decision-making process. Ultimately, the decision-makers should be a diverse group of individuals who can effectively collaborate and make well-informed decisions.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"The decision-makers involved in this decision should include key stakeholders and subject matter exp...\""
+    "followup_prompt": "Can you explain the difference between a stakeholder and a subject matter expert in this context?"
   },
   {
     "index": 70,
     "field": "#General Question Answering",
     "prompt": " How can I avoid common mistakes?",
     "response": "1. Take your time and pay attention to details. Rushing through tasks can lead to oversights and errors.\n2. Double-check your work before submitting or finalizing it. Reviewing your work can help catch any mistakes before they become a problem.\n3. Ask for feedback from others, especially if you are unsure about something. Another perspective can help identify any mistakes you may have missed.\n4. Stay organized and keep track of important details. A disorganized approach can lead to confusion and mistakes.\n5. Continuously educate yourself and stay updated on best practices in your field. Learning from your mistakes and improving your skills can help you avoid common errors.\n6. Trust your instincts and be proactive in identifying potential mistakes before they happen.\n7. Don't be afraid to ask for help or clarification if you are unsure about something. It is better to seek clarification than to make a mistake.\n8. Take breaks and avoid working when you are tired or stressed. Fatigue can lead to poor decision-making and mistakes.\n9. Learn from your mistakes and use them as opportunities for growth and improvement. Reflect on what went wrong and take steps to prevent similar mistakes in the future.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"1. Take your time and pay attention to details. Rushing through tasks can lead to oversights and err...\""
+    "followup_prompt": "Could you give me an example of a common mistake in project management and how to avoid it using these steps?"
   },
   {
     "index": 71,
     "field": "#Business Communication    ",
     "prompt": " Can you clarify the main objectives?",
     "response": "The main objectives can vary depending on the context, but in general, objectives are specific, measurable goals that an individual or organization aims to achieve within a certain timeframe. They serve as a roadmap to guide actions and decision-making to ultimately achieve success. Objectives can be related to financial performance, operational efficiency, customer satisfaction, employee engagement, or any other aspect of business or personal development. It is important for objectives to be clear, realistic, and aligned with the overall goals of the individual or organization.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"The main objectives can vary depending on the context, but in general, objectives are specific, meas...\""
+    "followup_prompt": "Can you provide an example of a SMART objective for a marketing campaign?"
   },
   {
     "index": 72,
     "field": "#Business Communication    ",
     "prompt": " What should we focus on for the next quarter?",
     "response": "1. Setting clear and achievable goals for the team or organization\n2. Improving communication and collaboration between team members\n3. Implementing new strategies or initiatives to increase productivity and efficiency\n4. Analyzing and addressing any weaknesses or inefficiencies in current processes\n5. Investing in employee training and development to enhance skills and knowledge\n6. Increasing customer satisfaction and retention through improved products or services\n7. Monitoring and adjusting budgets to ensure financial stability and growth\n8. Conducting market research and staying up-to-date on industry trends to remain competitive\n9. Enhancing overall workplace culture and morale to boost team motivation and engagement.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"1. Setting clear and achievable goals for the team or organization\n2. Improving communication and co...\""
+    "followup_prompt": "Let's focus on point 6. What are three specific strategies to increase customer satisfaction?"
   },
   {
     "index": 73,
     "field": "#Business Communication    ",
     "prompt": " Send a reminder to the participants.",
     "response": "Hello participants,\n\nJust a friendly reminder that our upcoming event is happening this weekend. Please make sure to mark your calendars and RSVP if you haven't already. We look forward to seeing you all there!\n\nThank you and have a great day.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"Hello participants,\n\nJust a friendly reminder that our upcoming event is happening this weekend. Ple...\""
+    "followup_prompt": "Can you make this reminder more formal and include the specific date, time, and location of the event?"
   },
   {
     "index": 74,
     "field": "#Business Communication    ",
     "prompt": " Update the contact list.",
     "response": "I'm sorry, I don't have access to your contact list. Please provide me with the names and contact information you would like me to add or update in your contact list.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"I'm sorry, I don't have access to your contact list. Please provide me with the names and contact in...\""
+    "followup_prompt": "Please add the following contact: Name: Jane Doe, Email: jane.doe@example.com, Phone: 555-1234. Also, please update John Smith's email to john.s@newexample.com."
   },
   {
     "index": 75,
     "field": "#Business Communication    ",
     "prompt": " Prepare the necessary documents.",
     "response": "1. Identification documents such as a passport, driver's license, or state-issued ID.\n2. Proof of address such as a utility bill or lease agreement.\n3. Financial documents such as bank statements, pay stubs, or tax returns.\n4. Any relevant legal documents such as a marriage certificate, divorce decree, or child custody agreement.\n5. Any required forms or applications specific to the purpose of the documents (e.g. loan application, rental agreement).\n6. Any additional supporting documents that may be necessary depending on the specific requirements of the situation (e.g. letters of recommendation, medical records, business licenses).",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"1. Identification documents such as a passport, driver's license, or state-issued ID.\n2. Proof of ad...\""
+    "followup_prompt": "What specific documents are typically needed to apply for a mortgage?"
   },
   {
     "index": 76,
     "field": "#Business Communication    ",
     "prompt": " Schedule a review meeting.",
     "response": "Subject: Review Meeting\n\nDear Team,\n\nI would like to schedule a review meeting to discuss our current projects and progress. The meeting will be held on [Date] at [Time] in [Location].\n\nAgenda items will include:\n\n1. Project updates\n2. Key milestones achieved\n3. Issues or challenges faced\n4. Next steps and action items\n\nPlease come prepared to discuss your individual contributions and any updates you have regarding the projects. If you have any specific topics you would like to add to the agenda, please let me know in advance.\n\nThank you for your attention to this matter. I look forward to a productive meeting.\n\nBest regards,\n\n[Your Name]",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"Subject: Review Meeting\n\nDear Team,\n\nI would like to schedule a review meeting to discuss our curren...\""
+    "followup_prompt": "Please make this a recurring meeting for every second Tuesday of the month."
   },
   {
     "index": 77,
     "field": "#Business Communication    ",
     "prompt": " Share the minutes of the meeting.",
     "response": "Meeting Minutes\nDate: [Insert Date]\nTime: [Insert Time]\nLocation: [Insert Location]\n\nAttendees:\n1. [Insert Name]\n2. [Insert Name]\n3. [Insert Name]\n4. [Insert Name]\n\nAgenda:\n1. Review of previous meeting minutes\n2. Updates on current projects\n3. Plans for upcoming events\n4. Any other business\n\nMinutes:\n1. The meeting was called to order by [Insert Name] at [Insert Time].\n2. The minutes of the previous meeting were reviewed and approved without any changes.\n3. Each attendee provided updates on their respective projects, including progress made and any challenges faced.\n4. Plans for upcoming events were discussed, including deadlines, responsibilities, and resources needed.\n5. Any other business was discussed, including scheduling the next meeting and additional tasks to be completed before then.\n6. The meeting was adjourned at [Insert Time].\n\nNext Meeting:\nDate: [Insert Date]\nTime: [Insert Time]\nLocation: [Insert Location]\n\nMinutes submitted by: [Insert Name]",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"Meeting Minutes\nDate: [Insert Date]\nTime: [Insert Time]\nLocation: [Insert Location]\n\nAttendees:\n1. [...\""
+    "followup_prompt": "Can you add a section for 'Action Items' with columns for the task, person responsible, and deadline?"
   },
   {
     "index": 78,
     "field": "#Business Communication    ",
     "prompt": " Provide feedback to the team.",
     "response": "Overall, I think the team did a great job on this project. I appreciated their effective communication and collaboration throughout the process. They were able to divide up tasks efficiently and work together to meet all the deadlines. I also noticed that they were open to feedback and willing to make adjustments as needed.\n\nOne area for improvement could be to improve the quality of the final deliverables. Making sure to thoroughly review and revise before final submission can help to catch any mistakes or improvements that could be made. Additionally, ensuring that all team members are on the same page with project goals and expectations can help to prevent misunderstandings and ensure the project runs smoothly.\n\nOverall, I am impressed with the team's hard work and dedication to this project. I look forward to seeing how they continue to grow and improve in future projects.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"Overall, I think the team did a great job on this project. I appreciated their effective communicati...\""
+    "followup_prompt": "Can you rephrase this feedback using the 'Start, Stop, Continue' framework?"
   },
   {
     "index": 79,
     "field": "#Business Communication    ",
     "prompt": " Assign tasks for the new project.",
     "response": "1. Research and gather information on potential target audience\n2. Develop a project timeline and set deadlines for each phase of the project\n3. Design a creative concept and visual style for the project\n4. Write and edit content for all project materials, including website, social media posts, and promotional materials\n5. Coordinate with graphic designers and photographers for visuals and branding elements\n6. Set up and manage social media accounts for project promotion\n7. Secure partnerships and collaborations with relevant businesses or organizations\n8. Plan and execute a launch event or promotional campaign for the project\n9. Monitor and track project progress and success metrics\n10. Prepare and deliver project reports and presentations to stakeholders.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"1. Research and gather information on potential target audience\n2. Develop a project timeline and se...\""
+    "followup_prompt": "Can you assign these tasks to a team of three people: Alex (Marketing), Ben (Design), and Carla (Content)?"
   },
   {
     "index": 80,
     "field": "#Business Communication    ",
     "prompt": " Set up a video conference.",
     "response": "To set up a video conference, you can use a platform like Zoom, Google Meet, Microsoft Teams, or Skype. Here are the general steps to set up a video conference:\n\n1. Choose a video conferencing platform that works best for you and your participants.\n\n2. Create an account or sign in to your existing account on the chosen platform.\n\n3. Schedule a meeting by setting the date and time, and invite participants by sending them the meeting link or email invitation.\n\n4. Set up any additional meeting settings, such as enabling video and audio options, screen sharing, and chat features.\n\n5. Test your equipment (camera, microphone, and speakers) to ensure they are working properly before the meeting starts.\n\n6. Start the meeting at the scheduled time by clicking on the meeting link or joining through the platform's interface.\n\n7. Follow the platform's instructions to manage the meeting, share your screen, chat with participants, and record the meeting if needed.\n\n8. End the meeting when it's complete and thank participants for attending.\n\nRemember to make sure your internet connection is stable, and consider using headphones or a headset to reduce background noise during the video conference.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"To set up a video conference, you can use a platform like Zoom, Google Meet, Microsoft Teams, or Sky...\""
+    "followup_prompt": "What are some best practices for etiquette during a professional video conference?"
   },
   {
     "index": 81,
     "field": "#Code Generation           ",
     "prompt": " Integrate the new module.",
     "response": "To integrate the new module into your existing system, follow these steps:\n\n1. Make sure the new module is compatible with your current technology stack and system requirements.\n\n2. Install the necessary dependencies for the new module.\n\n3. Update your system configuration to include the new module.\n\n4. Modify your codebase to leverage the functionality provided by the new module.\n\n5. Test the integration thoroughly to ensure that the new module works correctly with your system.\n\n6. If necessary, make any adjustments or fixes to address any compatibility or functionality issues.\n\n7. Once the integration is complete and tested successfully, deploy the updated system with the new module in place.\n\n8. Monitor the system post-deployment to ensure that everything is functioning as expected and handle any issues that may arise.\n\nBy following these steps, you should be able to successfully integrate the new module into your system.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"To integrate the new module into your existing system, follow these steps:\n\n1. Make sure the new mod...\""
+    "followup_prompt": "Could you provide a more detailed example for step 4, showing how to call a function from an imported Python module?"
   },
   {
     "index": 82,
     "field": "#Code Generation           ",
     "prompt": " Handle errors gracefully.",
     "response": "To handle errors gracefully in a software application, you should follow these best practices:\n\n1. Use try-catch blocks: Wrap the code that may raise an exception within a try block, and catch the specific exception within a catch block. This allows you to handle the error in a controlled manner.\n\n2. Provide meaningful error messages: When an error occurs, display a clear and concise error message to the user that explains what went wrong and suggests possible solutions.\n\n3. Log errors: Make sure to log errors in a log file or database so that you can review them later and troubleshoot the issue. This will also help you to identify common patterns of errors that may need to be addressed.\n\n4. Use custom error handling: Define custom error classes or functions to handle specific types of errors in a more structured way. This allows you to have more control over how errors are handled and presented to the user.\n\n5. Gracefully degrade functionality: In cases where an error prevents a certain functionality from working properly, consider implementing a fallback mechanism or alternative way to perform the task to ensure the application continues to function for the user.\n\n6. Test error scenarios: Always test the application with different error scenarios to ensure that it behaves as expected and displays appropriate error messages.\n\nBy applying these practices, you can ensure that your software application handles errors gracefully and provides a better user experience.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"To handle errors gracefully in a software application, you should follow these best practices:\n\n1. U...\""
+    "followup_prompt": "Can you provide a code example in Python of a try-except block for handling a FileNotFoundError?"
   },
   {
     "index": 83,
     "field": "#Code Generation           ",
     "prompt": " Add comments to the code.",
     "response": "// This function takes in an array of numbers and returns the sum of all the numbers\nfunction calculateSum(numbers) {\n    let sum = 0;\n\n    for (let i = 0; i < numbers.length; i++) {\n        sum += numbers[i];\n    }\n\n    return sum;\n}\n\n// Example of how to use the calculateSum function\nconst numbers = [1, 2, 3, 4, 5];\nconst sum = calculateSum(numbers);\nconsole.log(sum); // Output should be 15",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"// This function takes in an array of numbers and returns the sum of all the numbers\nfunction calcul...\""
+    "followup_prompt": "Please add JSDoc-style comments to this function."
   },
   {
     "index": 84,
     "field": "#Code Generation           ",
     "prompt": " Write test cases for the function.",
     "response": "- Test case 1: \n  Input: 5\n  Expected output: 120\n  Test the function with a positive integer input to check if it calculates the factorial correctly.\n\n- Test case 2:\n  Input: 0\n  Expected output: 1\n  Test the function with an input of 0 to check if it returns 1 as the factorial of 0 is 1.\n\n- Test case 3:\n  Input: -5\n  Expected output: None\n  Test the function with a negative integer input to check if it returns None or handles negative inputs appropriately.\n\n- Test case 4:\n  Input: 3.5\n  Expected output: None\n  Test the function with a floating point input to check if it returns None or handles non-integer inputs appropriately.\n\n- Test case 5:\n  Input: \"abc\"\n  Expected output: None\n  Test the function with a string input to check if it returns None or handles non-integer inputs appropriately.\n\n- Test case 6:\n  Input: 10\n  Expected output: 3628800\n  Test the function with a larger input to check if it can handle calculating the factorial of larger numbers without any issues.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"- Test case 1: \n  Input: 5\n  Expected output: 120\n  Test the function with a positive integer input ...\""
+    "followup_prompt": "Can you write these test cases in the form of a Python unittest script?"
   },
   {
     "index": 85,
     "field": "#Code Generation           ",
     "prompt": " Resolve the merge conflicts.",
     "response": "Merge conflicts occur when two branches have changes that cannot be automatically merged by Git. To resolve merge conflicts, you will need to manually merge the conflicting changes in the affected files.\n\nHere are the general steps to resolve merge conflicts:\n\n1. Checkout the branch where you want to merge the changes.\n2. Run `git merge <branch>` to merge the changes from the other branch.\n3. Git will indicate that there are merge conflicts.\n4. Open the files with conflicts in a text editor and look for the conflict markers `<<<<<<<`, `=======`, and `>>>>>>>`.\n5. Edit the files to resolve the conflicts by selecting the desired changes or combining them.\n6. Save the changes and remove the conflict markers.\n7. Add the files to the staging area with `git add <filename>` once the conflicts are resolved.\n8. Commit the changes with `git commit -m \"Resolved merge conflicts\"`.\n9. Finally, push the changes to the remote repository with `git push`.\n\nIt's important to carefully review the changes and resolve the conflicts in a way that maintains the integrity of the code. You may also want to communicate with your team members to ensure everyone is aware of the changes and conflicts that were resolved.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"Merge conflicts occur when two branches have changes that cannot be automatically merged by Git. To ...\""
+    "followup_prompt": "Can you show an example of what a file with a merge conflict looks like?"
   },
   {
     "index": 86,
     "field": "#Code Generation           ",
     "prompt": " Implement the requested feature.",
     "response": "I'm sorry, but I need more information in order to fulfill your request. What specific feature would you like me to implement?",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"I'm sorry, but I need more information in order to fulfill your request. What specific feature would...\""
+    "followup_prompt": "I would like you to implement a 'dark mode' toggle feature for a web application."
   },
   {
     "index": 87,
     "field": "#Code Generation           ",
     "prompt": " Remove deprecated code.",
     "response": "It is important to remove deprecated code from our codebase to ensure that we are using up-to-date and supported code. \n\nTo remove deprecated code, you can follow these steps: \n1. Identify the deprecated code in your codebase by looking for warnings or using a code analyzer tool.\n2. Replace the deprecated code with the recommended alternative or update it to use a supported feature.\n3. Test the updated code to ensure that it functions correctly.\n4. Remove the deprecated code from the codebase once you have confirmed that the updated code works as expected.\n\nBy removing deprecated code, you can improve the maintainability and performance of your codebase.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"It is important to remove deprecated code from our codebase to ensure that we are using up-to-date a...\""
+    "followup_prompt": "How can I find deprecated code in a large Java project using Maven?"
   },
   {
     "index": 88,
     "field": "#Code Generation           ",
     "prompt": " Initialize the database.",
     "response": "To initialize the database, you need to first create the database structure by defining the tables and their relationships. Then you can populate the tables with initial data if necessary.\n\nHere are the general steps to initialize a database:\n\n1. Create a database schema by defining tables, columns, and relationships.\n2. Create the tables using SQL statements or a database management tool.\n3. Define primary keys, foreign keys, and any constraints needed for data integrity.\n4. Populate the tables with initial data if required.\n5. Test the database to ensure it is functioning correctly.\n\nIf you are using a specific database management system, refer to its documentation for detailed instructions on initializing the database.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"To initialize the database, you need to first create the database structure by defining the tables a...\""
+    "followup_prompt": "Can you provide the SQL statements to create a simple 'Users' table with 'id', 'username', and 'email' columns?"
   },
   {
     "index": 89,
     "field": "#Code Generation           ",
     "prompt": " Configure the network settings.",
     "response": "To configure network settings, follow these steps:\n\n1. Access the network settings menu on your device. This can typically be found in the settings app or control panel.\n\n2. Select the option to view or change network settings.\n\n3. Choose the type of connection you are using (Wi-Fi, Ethernet, etc.).\n\n4. Enter the required information for your connection type, such as the network name (SSID), password, IP address, subnet mask, and default gateway.\n\n5. Save your changes and exit the network settings menu.\n\n6. Test your connection to ensure that the settings have been configured correctly.\n\nIf you are having trouble with network settings, you may need to consult the user manual for your device or contact your internet service provider for assistance.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"To configure network settings, follow these steps:\n\n1. Access the network settings menu on your devi...\""
+    "followup_prompt": "How do I find my computer's IP address on Windows 11?"
   },
   {
     "index": 90,
     "field": "#Code Generation           ",
     "prompt": " Build the application.",
     "response": "To build the application, you will need to follow these general steps:\n\n1. Planning: Define the requirements, objectives, target audience, and features of the application. Create wireframes or mockups to visualize the design.\n\n2. Design: Create the user interface design based on the wireframes. Determine the color scheme, typography, and layout.\n\n3. Development: Write the code for the application based on the design and requirements. Use programming languages, frameworks, and libraries suitable for the project.\n\n4. Testing: Conduct thorough testing of the application to ensure it functions correctly and meets the requirements. Test for bugs, errors, and usability issues.\n\n5. Deployment: Deploy the application to a hosting server or app store for public access. Ensure the application is secure and stable for users.\n\n6. Maintenance: Regularly update and maintain the application to fix bugs, add new features, and enhance the user experience.\n\nRemember to involve stakeholders and users in the development process to gather feedback and make improvements where necessary. Good luck with building your application!",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"To build the application, you will need to follow these general steps:\n\n1. Planning: Define the requ...\""
+    "followup_prompt": "Can you explain the difference between wireframes, mockups, and prototypes in the planning and design phases?"
   },
   {
     "index": 91,
     "field": "#Data Analysis             ",
     "prompt": " Filter the data for relevant results.",
     "response": "I'm sorry, but you have not provided any specific data or criteria for filtering. Please provide more information or specific instructions so that I can help you filter the data for relevant results.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"I'm sorry, but you have not provided any specific data or criteria for filtering. Please provide mor...\""
+    "followup_prompt": "Please filter the provided sales data to only show results from the 'North America' region and where 'Sales Amount' is greater than $1000."
   },
   {
     "index": 92,
     "field": "#Data Analysis             ",
     "prompt": " Highlight significant changes.",
     "response": "One significant change is the increased use of technology in various industries, leading to improved efficiency and productivity. Another significant change is the shift towards sustainable practices in businesses to reduce environmental impact. Additionally, the global pandemic has accelerated the adoption of remote work and virtual communication, transforming the way organizations operate. Lastly, the growing awareness of social issues has led to an increased focus on diversity, equity, and inclusion within companies.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"One significant change is the increased use of technology in various industries, leading to improved...\""
+    "followup_prompt": "Can you provide data or statistics to support the claim about the increased use of technology in the last five years?"
   },
   {
     "index": 93,
     "field": "#Data Analysis             ",
     "prompt": " Aggregate the statistics.",
     "response": "I'm sorry, it seems like some information is missing in order to aggregate the statistics. Could you please provide more details or specific data that you would like to aggregate?",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"I'm sorry, it seems like some information is missing in order to aggregate the statistics. Could you...\""
+    "followup_prompt": "Please aggregate the provided sales data by calculating the total sales amount for each region."
   },
   {
     "index": 94,
     "field": "#Data Analysis             ",
     "prompt": " Detect missing values.",
     "response": "To detect missing values in a dataset, you can use various methods depending on the programming language or tool you are using. \n\nIn Python, you can use the `isnull()` or `isna()` method from the pandas library to check for missing values in a dataframe. For example:\n```\nimport pandas as pd\n\ndf = pd.read_csv('data.csv')\nmissing_values = df.isnull().sum()\nprint(missing_values)\n```\nThis will return the total number of missing values in each column of the dataframe.\n\nIn R, you can use the `is.na()` function to check for missing values in a dataframe. For example:\n```\ndata <- read.csv('data.csv')\nmissing_values <- colSums(is.na(data))\nprint(missing_values)\n```\nThis will return the total number of missing values in each column of the dataframe.\n\nYou can also visualize missing values using plots such as heatmaps or bar charts to easily identify the missing data in a dataset.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"To detect missing values in a dataset, you can use various methods depending on the programming lang...\""
+    "followup_prompt": "After detecting missing values, what are some common strategies for handling them?"
   },
   {
     "index": 95,
     "field": "#Data Analysis             ",
     "prompt": " Project future trends.",
     "response": "There are several possible future trends that could arise in various industries in the coming years. Some potential trends include:\n\n1. Increased automation and artificial intelligence - As technology continues to advance, we can expect to see more automation and artificial intelligence being integrated into various industries such as manufacturing, customer service, and healthcare.\n\n2. Sustainability and eco-friendly practices - With growing concerns about climate change and environmental sustainability, businesses and consumers alike are increasingly prioritizing eco-friendly practices and products. This trend is likely to continue growing in the future.\n\n3. Remote work and flexible schedules - The COVID-19 pandemic has accelerated the shift towards remote work, and many companies are now realizing the benefits of allowing employees to work from home. This trend is expected to continue in the future, with more companies adopting flexible work schedules and remote work options.\n\n4. Personalized and customized products and services - With advances in technology and data analytics, businesses are able to better understand their customers' preferences and behaviors. This has led to a rise in personalized and customized products and services, and this trend is likely to continue in the future as companies seek to differentiate themselves in a competitive market.\n\n5. Healthcare innovation - The healthcare industry is constantly evolving, with new technologies and treatments being developed to improve patient outcomes. In the future, we can expect to see further advancements in areas such as telemedicine, personalized medicine, and wearable health technology.\n\nOverall, the future trends in various industries are likely to be driven by advances in technology, changing consumer preferences, and societal values. Companies that are able to adapt and innovate in response to these trends will be well-positioned for success in the future.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"There are several possible future trends that could arise in various industries in the coming years....\""
+    "followup_prompt": "Based on historical sales data, can you project the sales trend for our new product line for the next two quarters?"
   },
   {
     "index": 96,
     "field": "#Data Analysis             ",
     "prompt": " Provide actionable recommendations.",
     "response": "1. Develop a clear plan of action: Create a step-by-step plan outlining specific tasks, deadlines, and responsibilities to ensure efficient execution of your goals.\n\n2. Prioritize tasks: Identify the most important and urgent tasks that require immediate attention, and focus on completing those first before moving on to less critical tasks.\n\n3. Set SMART goals: Make sure your goals are Specific, Measurable, Achievable, Relevant, and Time-bound to provide clearer direction and ensure successful outcomes.\n\n4. Delegate tasks: Assign responsibilities to team members or colleagues who are best suited to handle specific tasks, allowing you to focus on high-priority tasks that require your attention.\n\n5. Monitor progress: Regularly track and evaluate progress towards your goals to identify any areas that may require adjustments or additional resources.\n\n6. Seek feedback: Solicit feedback from stakeholders or colleagues to gain insights into how your actions are perceived and identify areas for improvement.\n\n7. Learn from mistakes: Use setbacks or failures as opportunities to learn and grow, adjusting your approach as needed to achieve better results in the future.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"1. Develop a clear plan of action: Create a step-by-step plan outlining specific tasks, deadlines, a...\""
+    "followup_prompt": "Based on the finding that our app has a high user drop-off rate after the first week, provide three actionable recommendations."
   },
   {
     "index": 97,
     "field": "#Data Analysis             ",
     "prompt": " Map the data to regions.",
     "response": "To map the data to regions, you can categorize the data based on geographic location. For example, if the data is about sales figures, you can group the data into regions such as North America, Europe, Asia, and Africa. \n\nOnce the data is categorized into regions, you can create a map that visually represents the data by showing each region and its corresponding data values. This can be done using mapping software or tools such as Google Maps, Tableau, or ArcGIS. \n\nBy mapping the data to regions, you can easily identify patterns, trends, and relationships between the data points in different geographic areas. Visualizing the data in this way can also help you make more informed decisions and strategies based on the geographical distribution of the data.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"To map the data to regions, you can categorize the data based on geographic location. For example, i...\""
+    "followup_prompt": "Can you provide Python code using the GeoPandas library to create a choropleth map of US states with sample data?"
   },
   {
     "index": 98,
     "field": "#Data Analysis             ",
     "prompt": " Rank the categories.",
     "response": "I'm sorry, but you have not provided any specific categories to rank. Please provide a list of categories and I would be happy to rank them for you.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"I'm sorry, but you have not provided any specific categories to rank. Please provide a list of categ...\""
+    "followup_prompt": "Please rank the following product categories based on their total sales from the provided dataset: Electronics, Apparel, Home Goods, and Books."
   },
   {
     "index": 99,
     "field": "#Data Analysis             ",
     "prompt": " Segment the customers.",
     "response": "Customers can be segmented in various ways based on demographics, psychographics, behavior, or other characteristics. Some common segmentation criteria include:\n\n1. Demographic segmentation: Based on factors like age, gender, income, education, occupation, marital status, and family size.\n\n2. Psychographic segmentation: Based on customers' lifestyle, values, attitudes, interests, and behavioral patterns.\n\n3. Geographic segmentation: Based on customers' location, such as country, region, city, or climate.\n\n4. Behavioral segmentation: Based on customers' purchasing behavior, usage rate, brand loyalty, and responses to marketing efforts.\n\n5. Firmographic segmentation: B2B customers can be segmented based on factors like industry, company size, revenue, and number of employees.\n\n6. Generational segmentation: Based on the different characteristics and preferences of each generation, such as Baby Boomers, Gen X, Millennials, and Gen Z.\n\nSegmenting customers allows businesses to better target their marketing efforts, tailor their offerings to meet specific needs, and improve customer satisfaction and retention.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"Customers can be segmented in various ways based on demographics, psychographics, behavior, or other...\""
+    "followup_prompt": "Using behavioral segmentation, can you create three customer segments based on purchasing frequency: High, Medium, and Low?"
   },
   {
     "index": 100,
     "field": "#Data Analysis             ",
     "prompt": " Estimate the impact.",
     "response": "It is difficult to provide an accurate estimate without specific details about the situation being referenced. Impact can vary greatly depending on a variety of factors such as the scale of the event, the number of people involved, the severity of the consequences, and the overall context. It would be helpful to have more information in order to provide a more informed estimate.",
-    "followup_prompt": "Can you expand or refine your answer? For example: \"It is difficult to provide an accurate estimate without specific details about the situation being r...\""
+    "followup_prompt": "Please estimate the financial impact of a 2-hour website outage on an e-commerce site that has an average of $10,000 in sales per hour."
   }
 ]
