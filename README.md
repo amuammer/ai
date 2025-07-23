@@ -213,6 +213,19 @@ For highly ambiguous prompts, we conservatively assume at least one wasted inter
 We assessed the ROI of integrating the analyzer LLM by comparing the token cost and time cost of preventive analysis with the costs of a failed interaction cycle.
 
 ## 6.1 Defining Metrics
+| Metric                     | Type               | Description                                   |
+|----------------------------|--------------------|-----------------------------------------------|
+| Ambiguity Score Accuracy   | Quantitative       | Alignment with human labels                   |
+| Dimension Coverage         | Quantitative       | # distinct ambiguity types detected          |
+| Clarification Success Rate | Quantitative       | % clarifications resolving ambiguity         |
+| LLM Output Quality         | Quant/Qualitative  | Human/automated rating of response            |
+| Token Cost Savings         | Quantitative       | \( C_{wasted} - C_{analysis} \) |
+| Time-to-Resolution         | Quantitative       | Latency from prompt to correct answer         |
+| User Satisfaction          | Qualitative        | User surveys, ratings                         |
+| Adoption Rate              | Quantitative       | % users accepting clarified prompts           |
+| Failure Rate               | Quantitative       | System robustness, error rate                 |
+
+The above are all metrics can we go with but we choose:
 
 - **Computational Cost Savings:**  
   The token cost savings realized by using the analyzer system, as defined above.
