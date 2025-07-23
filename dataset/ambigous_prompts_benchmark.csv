@@ -1,0 +1,100 @@
+Business Communication    , Can you prepare a summary for the meeting?
+Business Communication    , Send the report to everyone by tomorrow.
+Business Communication    , Write an email about the latest update.
+#Business Communication    , Schedule a call with the team.
+#Business Communication    , Let me know the outcome of the discussion.
+#Business Communication    , Share the presentation with the stakeholders.
+#Business Communication    , Remind me about the important deadlines.
+#Business Communication    , Organize a follow-up session next week.
+#Business Communication    , Please respond to the client’s concerns.
+#Business Communication    , Put together the agenda for the event.
+#Code Generation           , Write a function for sorting.
+#Code Generation           , Generate code to handle user input.
+#Code Generation           , Fix the bug in the following code.
+#Code Generation           , Update the configuration file as needed.
+#Code Generation           , Implement a class for processing data.
+#Code Generation           , Refactor the main method.
+#Code Generation           , Create a script to automate the process.
+#Code Generation           , Add logging to the application.
+#Code Generation           , Optimize the function for performance.
+#Code Generation           , Make the program more robust.
+#Data Analysis             , Create a chart for the sales data.
+#Data Analysis             , Analyze the survey results.
+#Data Analysis             , Prepare a dashboard for the metrics.
+#Data Analysis             , Compare last year’s data with this year.
+#Data Analysis             , Find the anomalies in the dataset.
+#Data Analysis             , Summarize the trends in the data.
+#Data Analysis             , Report on customer behavior.
+#Data Analysis             , Visualize the data for management.
+#Data Analysis             , Show the insights from the data.
+#Data Analysis             , Identify outliers in the records.
+#Education                 , Prepare notes for the class.
+#Education                 , Design a quiz for the students.
+#Education                 , Create an assignment on this topic.
+#Education                 , Make a lesson plan.
+#Education                 , Write feedback for the student.
+#Education                 , Assess the project submissions.
+#Education                 , Grade the papers.
+#Education                 , Prepare questions for the test.
+#Education                 , Review the student’s progress.
+#Education                 , Guide the students through the activity.
+#Technical Writing         , Document the system architecture.
+#Technical Writing         , Write the user manual.
+#Technical Writing         , Update the product documentation.
+#Technical Writing         , Create a FAQ section.
+#Technical Writing         , Prepare the release notes.
+#Technical Writing         , Describe the installation process.
+#Technical Writing         , Write a troubleshooting guide.
+#Technical Writing         , Edit the technical report.
+#Technical Writing         , Summarize the findings in the document.
+#Technical Writing         , Revise the draft for clarity.
+#Human Resources           , Schedule interviews for the applicants.
+#Human Resources           , Prepare an onboarding plan.
+#Human Resources           , Update the employee records.
+#Human Resources           , Draft a policy for remote work.
+#Human Resources           , Review the job descriptions.
+#Human Resources           , Organize a training session.
+#Human Resources           , Send out the offer letters.
+#Human Resources           , Handle the employee grievances.
+#Human Resources           , Collect feedback from the staff.
+#Human Resources           , Process the payroll.
+#General Question Answering, What is the best way to improve productivity?
+#General Question Answering, How can I make a presentation more engaging?
+#General Question Answering, Why did the project fail?
+#General Question Answering, What is the most effective solution?
+#General Question Answering, How should I respond to criticism?
+#General Question Answering, What steps should I take next?
+#General Question Answering, Is this approach better than the other?
+#General Question Answering, What are the key challenges?
+#General Question Answering, Who should be involved in this decision?
+#General Question Answering, How can I avoid common mistakes?
+#Business Communication    , Can you clarify the main objectives?
+#Business Communication    , What should we focus on for the next quarter?
+#Business Communication    , Send a reminder to the participants.
+#Business Communication    , Update the contact list.
+#Business Communication    , Prepare the necessary documents.
+#Business Communication    , Schedule a review meeting.
+#Business Communication    , Share the minutes of the meeting.
+#Business Communication    , Provide feedback to the team.
+#Business Communication    , Assign tasks for the new project.
+#Business Communication    , Set up a video conference.
+#Code Generation           , Integrate the new module.
+#Code Generation           , Handle errors gracefully.
+#Code Generation           , Add comments to the code.
+#Code Generation           , Write test cases for the function.
+#Code Generation           , Resolve the merge conflicts.
+#Code Generation           , Implement the requested feature.
+#Code Generation           , Remove deprecated code.
+#Code Generation           , Initialize the database.
+#Code Generation           , Configure the network settings.
+#Code Generation           , Build the application.
+#Data Analysis             , Filter the data for relevant results.
+#Data Analysis             , Highlight significant changes.
+#Data Analysis             , Aggregate the statistics.
+#Data Analysis             , Detect missing values.
+#Data Analysis             , Project future trends.
+#Data Analysis             , Provide actionable recommendations.
+#Data Analysis             , Map the data to regions.
+#Data Analysis             , Rank the categories.
+#Data Analysis             , Segment the customers.
+#Data Analysis             , Estimate the impact.

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<head>
+  <script src="https://js.puter.com/v2/"></script>
+</head>
+
+<body>
+  <script>
+    console.log("hello")
+
+
+    // Create JSON blob and trigger download
+    function downloadJSON(jsonData) {
+      const blob = new Blob([JSON.stringify(jsonData, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'dataset.json';
+      a.click();
+    }
+
+    const queryLLM = async (prompt) => {
+      const chatOptions = { model: "openrouter:openai/gpt-3.5-turbo" };
+      try {
+        const response = await puter.ai.chat(prompt, chatOptions);
+        return response;
+      } catch (error) {
+        console.error('Error during query LLM request:', error);
+      }
+    };
+    (async function getDataset() {
+      try {
+        const response = await fetch('ambigous_prompts_benchmark.csv');
+        const text = await response.text();
+        const rows = text.split('\n').map(row => row.split(','));
+        const baseLineResponses = await Promise.all(
+          rows.map(async ([field, prompt], i) => {
+            const baseLineResponse = await queryLLM(prompt);
+            console.log({
+              index: i + 1,
+              field,
+              prompt,
+              response: baseLineResponse.message.content
+            })
+            return {
+              index: i + 1,
+              field,
+              prompt,
+              response: baseLineResponse.message.content
+            };
+          })
+        );
+
+        downloadJSON(baseLineResponses);
+        console.log(baseLineResponses);
+
+
+
+      } catch (error) {
+        console.error(error);
+      }
+    })();
+  </script>
+</body>
+
+</html>
