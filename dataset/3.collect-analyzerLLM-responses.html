@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<head>
+  <script src="https://js.puter.com/v2/"></script>
+</head>
+
+<body>
+  <script>
+    console.log("hello")
+
+
+    // Create JSON blob and trigger download
+    function downloadJSON(jsonData) {
+      const blob = new Blob([JSON.stringify(jsonData, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'analyzerLLMResponse.json';
+      a.click();
+    }
+
+    const queryLLM = async (prompt) => {
+      //      const chatOptions = { model: "openrouter:openai/gpt-3.5-turbo" };
+      const chatOptions = { model: "gpt-4.1" };
+
+      try {
+          promptText = `Analyze the ambiguity of this prompt: "${prompt}"
+                 Return in JSON:
+                 - ambiguityRating (0-100)
+                 - analysisTable: [ { impactLevel, dimensionName, possibleAssumptions(two assumed values)} ]
+                 - suggestedClarifiedPrompt: clarified prompt assumptions for the missing parameters`
+        const response = await puter.ai.chat(promptText, chatOptions);
+        return response;
+      } catch (error) {
+        console.error('Error during query LLM request:', error);
+      }
+    };
+    (async function getDataset() {
+      try {
+        const response = await fetch('ambigous_prompts_benchmark.csv');
+        const text = await response.text();
+        const rows = text.split('\n').map(row => row.split(','));
+        const baseLineResponses = await Promise.all(
+          rows.map(async ([field, prompt], i) => {
+            const baseLineResponse = await queryLLM(prompt);
+            if (baseLineResponse) {
+              console.log({
+                index: i + 1,
+                field,
+                prompt,
+                response: baseLineResponse.message.content
+              })
+              return {
+                index: i + 1,
+                field,
+                prompt,
+                response: baseLineResponse.message.content
+              };
+            } else {
+              console.log({
+                index: i + 1,
+                field,
+                prompt,
+              })
+              return {
+                index: i + 1,
+                field,
+                prompt,
+              };
+            }
+          })
+        );
+
+        downloadJSON(baseLineResponses);
+        console.log(baseLineResponses);
+
+
+
+      } catch (error) {
+        console.error(error);
+      }
+    })();
+  </script>
+</body>
+
+</html>

@@ -16,12 +16,14 @@
 
       const a = document.createElement('a');
       a.href = url;
-      a.download = 'dataset.json';
+      a.download = 'generatorLLMResponse.json';
       a.click();
     }
 
     const queryLLM = async (prompt) => {
-      const chatOptions = { model: "openrouter:openai/gpt-3.5-turbo" };
+      //      const chatOptions = { model: "openrouter:openai/gpt-3.5-turbo" };
+      const chatOptions = { model: "gpt-4.1" };
+
       try {
         const response = await puter.ai.chat(prompt, chatOptions);
         return response;
@@ -37,18 +39,31 @@
         const baseLineResponses = await Promise.all(
           rows.map(async ([field, prompt], i) => {
             const baseLineResponse = await queryLLM(prompt);
-            console.log({
-              index: i + 1,
-              field,
-              prompt,
-              response: baseLineResponse.message.content
-            })
-            return {
-              index: i + 1,
-              field,
-              prompt,
-              response: baseLineResponse.message.content
-            };
+            if (baseLineResponse) {
+              console.log({
+                index: i + 1,
+                field,
+                prompt,
+                response: baseLineResponse.message.content
+              })
+              return {
+                index: i + 1,
+                field,
+                prompt,
+                response: baseLineResponse.message.content
+              };
+            } else {
+              console.log({
+                index: i + 1,
+                field,
+                prompt,
+              })
+              return {
+                index: i + 1,
+                field,
+                prompt,
+              };
+            }
           })
         );
 
