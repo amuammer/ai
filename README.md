@@ -239,13 +239,31 @@ Across all prompts in the benchmark dataset, average computed costs were:
 
 | Metric                                        | Avg Value        |
 |-----------------------------------------------|------------------|
-| **C_wasted (Failure, tokens)**                | 1050 tokens      |
-| **C_analysis (Prevention, tokens)**           | 450 tokens       |
-| **Net Computational Savings per Prompt**      | 600 tokens       |
-| **Avg. Time-to-Satisfactory-Response (Base)** | [to be filled]   |
-| **Avg. Time-to-Satisfactory-Response (With Analyzer)** | [to be filled] |
+| **Avg. C_wasted (Failure, tokens)**           | 276 tokens       |
+| **Avg. C_analysis (Prevention, tokens)**      | 139 tokens       |
+| **Net Computational Savings per Prompt**      | 136 tokens       |
+| **Avg. Reading Baseline Response (Failure)**  | 118.36 sec       |
+| **Avg. Reading Analyzer Response**            | 70.17 sec        |
+| **Net Time Saved in Reading Effort**          | 48.19 sec        |
 
-On average, engaging the analyzer LLM incurs less than half the token cost of a failed cycle. Preventive analysis with ~450 tokens averts ~1050 tokens of waste per ambiguous prompt—a 57% reduction in computational expenditure per interaction. The system also reduces the time to obtain a satisfactory LLM output (detailed timing data to be filled in final results).
+
+On average, engaging the analyzer LLM incurs about half the token cost of a failed interaction.
+Preventive analysis with ~139 tokens averts ~276 tokens of waste per ambiguous prompt — a 49% reduction in computational expenditure per interaction.
+
+The analyzer saves the initial thinking and typing time of composing a follow-up.
+But it does not fully eliminate user effort — it shifts some of that effort to editing a provided clarification.
+
+On average, users spend approximately 118 seconds reading ambiguous baseline responses to identify failures, compared to just 70 seconds reading structured analyzer outputs. This reflects a 41% reduction in reading time, streamlining comprehension and reducing cognitive overhead during ambiguity resolution.
+
+```
+Without Analyzer:
+User Prompt -> User reads response → notices failure → composes follow-up prompt → sends
+```
+```
+With Analyzer:
+User Prompt -> Analyzer generates clarified prompt → user reviews/edits → sends
+```
+
 
 # 7. Discussion and Future Work
 
