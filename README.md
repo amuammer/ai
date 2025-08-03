@@ -77,7 +77,7 @@ The following is a table that the framework lists:
 **Stage 3: Clarified Prompt Suggestion**
 Based on the determined ambiguity facets, the system automatically selects a single, completely resolved (clarified) prompt that specifies the resolved doubts. This, after all is said and done, gives the users a place for editing for further refining.
 
-! [System Architecture](images/Figure1.jpeg)
+![System Architecture](images/Figure1.jpeg)
 
 ## 4.2 Core Implementation
 ### 4.2.1 Frontend Service Integration With Puter.js
@@ -183,7 +183,7 @@ We composed a benchmark set of extremely ambiguous prompts across various tasks 
 - Human Resources (15)
 - General Question Answering (15)
 
-! [ambiguityRatingPerField](images/Figure3.jpeg)
+![ambiguityRatingPerField](images/Figure3.jpeg)
 
 For each ambiguous command, we performed the following:
 1. **Simulate a Wasted Cycle:**  
@@ -306,7 +306,7 @@ avg_{char, analyzer\_response} = 179 char
 | **Avg. Reading Analyzer Response**           | 11.93 seconds|
 | **Net Time Spent in Reading Effort**         | 70.83 sec  |
 
-! [tokenAndTimeEfficiency](images/Figure4.jpeg)
+![tokenAndTimeEfficiency](images/Figure4.jpeg)
 
 The reward of engaging the analyzer LLM is, on average, half the token cost of an unsuccessful interaction. Preventative analysis using 139.4 tokens prevents 275.8 tokens of waste on average for each ambiguous prompt—a 49.5% reduction in computational cost per interaction. The analyzer eliminates much of the original thinking and typing time of writing a follow-up. But it does not remove user effort entirely—it offloads some of that effort to creating an edit clarification.
 ```
@@ -336,7 +336,7 @@ So:
 
 When analyzing failures, the users spend on average around 83 seconds reading the ambiguous baseline responses, while around 12 seconds for the structured analyzer outputs. This results in a 71% reduction in reading time, the potential for increased comprehension, as well as a decrease in cognitive load during the disambiguation process.
 
-! [tokenAndTimePerField](images/Figure5.jpeg)
+![tokenAndTimePerField](images/Figure5.jpeg)
 
 # 7. Discussion and Future Work
 
