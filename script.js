@@ -8,7 +8,7 @@ const copyAllButton = document.getElementById('copy-all-button');
 const feedbackMessage = document.getElementById('feedback-message');
 let selectedImageURL = null; // Stores the image URL from file input or paste
 const modelSelectionDiv = document.getElementById('model-selection'); // Get the model selection div
-let selectedModel = 'gpt-4.1'; // Default AI model
+let selectedModel = 'gpt-5'; // Default AI model
 
 // Set initial selected model based on checked radio button
 document.addEventListener('DOMContentLoaded', () => {
